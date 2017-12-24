@@ -46,7 +46,27 @@ public class SkladisteController implements Initializable, DatabaseDataChangedLi
     }
 
     public void onIzmjeniButtonClicked() {
+        Artikl artikl = artikliTableView.getSelectionModel().getSelectedItem();
 
+        if (artikl != null) {
+            Pane root;
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/ArtiklEditView.fxml"));
+                root = fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setTitle("Dodavanje novog artikla");
+                stage.setScene(new Scene(root, 400, 550));
+
+                ((ArtiklEditController)fxmlLoader.getController()).setDatabaseDataChangedListener(this);
+                ((ArtiklEditController)fxmlLoader.getController()).setEditingArtikl(artikl);
+                ((ArtiklEditController)fxmlLoader.getController()).setStage(stage);
+
+                stage.show();
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public void onNovoButtonClicked() {

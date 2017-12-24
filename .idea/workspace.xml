@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5321fe76-a474-4a88-a330-963fb3089ce2" name="Default" comment="Dodan prikaz artikala. Dodano dodavanje novog artikla.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ArtiklEditController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/model/Artikl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/ArtiklEditView.fxml" />
+    <list default="true" id="5321fe76-a474-4a88-a330-963fb3089ce2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/controller/SkladisteController.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/controller/SkladisteController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/PoslovniPartnerEditController.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/PoslovniPartnerEditController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/model/Mjera.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/model/Mjera.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/utils/ApplicationUtils.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/utils/ApplicationUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/SkladisteView.fxml" afterPath="$PROJECT_DIR$/src/main/resources/SkladisteView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/SkladisteView.fxml" afterPath="$PROJECT_DIR$/target/classes/SkladisteView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ArtiklEditController.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ArtiklEditController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,15 +51,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SkladisteController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SkladisteController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/SkladisteController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="222">
-              <caret line="89" column="89" lean-forward="false" selection-start-line="89" selection-start-column="89" selection-end-line="89" selection-end-column="89" />
+              <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3907#3908#0" expanded="true" />
-                <element signature="e#3937#3938#0" expanded="true" />
+                <element signature="e#4790#4791#0" expanded="true" />
+                <element signature="e#4820#4821#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PoslovniPartnerEditController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/PoslovniPartnerEditController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="47" column="20" lean-forward="false" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,18 +90,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArtiklEditController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ArtiklEditController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ArtiklEditController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="76" column="53" lean-forward="true" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
+            <state relative-caret-position="294">
+              <caret line="68" column="34" lean-forward="true" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2289#2290#0" expanded="true" />
-                <element signature="e#2339#2340#0" expanded="true" />
-                <element signature="e#2380#2381#0" expanded="true" />
-                <element signature="e#2414#2415#0" expanded="true" />
+                <element signature="e#3434#3435#0" expanded="true" />
+                <element signature="e#3484#3485#0" expanded="true" />
+                <element signature="e#3525#3526#0" expanded="true" />
+                <element signature="e#3559#3560#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Artikl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/Artikl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,34 +134,34 @@
       <file leaf-file-name="DatabaseWorker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="346" column="49" lean-forward="false" selection-start-line="346" selection-start-column="49" selection-end-line="346" selection-end-column="49" />
+            <state relative-caret-position="314">
+              <caret line="417" column="0" lean-forward="false" selection-start-line="417" selection-start-column="0" selection-end-line="417" selection-end-column="0" />
               <folding>
-                <marker date="1514143850846" expanded="true" signature="1524:1548" ph="SELECT * FRO... zaposlenik" />
-                <marker date="1514143850846" expanded="true" signature="2476:2511" ph="DELETE FROM " />
-                <marker date="1514143850846" expanded="true" signature="2971:3102" ph="INSERT INTO zaposlenik... " />
-                <marker date="1514143850846" expanded="true" signature="3982:4079" ph="UPDATE zapos... " />
-                <marker date="1514143850846" expanded="true" signature="3982:4080" ph="UPDATE zapos... " />
-                <marker date="1514143850846" expanded="true" signature="3982:4115" ph="UPDATE zapos... " />
-                <marker date="1514143850846" expanded="true" signature="5137:5167" ph="SELECT * FRO... poslovni_partner" />
-                <marker date="1514143850846" expanded="true" signature="6045:6086" ph="DELETE FROM " />
-                <marker date="1514143850846" expanded="true" signature="6566:6706" ph="INSERT INTO zaposlenik... " />
-                <marker date="1514143850846" expanded="true" signature="7579:7720" ph="UPDATE zapos... " />
-                <marker date="1514143850846" expanded="true" signature="8556:8586" ph="DELETE FROM " />
-                <marker date="1514143850846" expanded="true" signature="9026:9062" ph="INSERT INTO mjera... " />
-                <marker date="1514143850846" expanded="true" signature="9026:9076" ph="INSERT INTO poslovni_partner... " />
-                <marker date="1514143850846" expanded="true" signature="9591:9646" ph="UPDATE mjera... " />
-                <marker date="1514143850846" expanded="true" signature="10329:10348" ph="SELECT * FRO... mjera" />
-                <marker date="1514143850846" expanded="true" signature="11022:11049" ph="SELECT * FRO... tip_dokumenta" />
-                <marker date="1514143850846" expanded="true" signature="11605:11643" ph="DELETE FROM " />
-                <marker date="1514143850846" expanded="true" signature="12111:12165" ph="INSERT INTO tip_dokumenta... " />
-                <marker date="1514143850846" expanded="true" signature="12711:12770" ph="UPDATE tip_d... " />
-                <marker date="1514143850846" expanded="true" signature="13335:13425" ph="SELECT artik... artikl" />
-                <marker date="1514143850846" expanded="true" signature="14818:14849" ph="DELETE FROM " />
-                <marker date="1514143850846" expanded="true" signature="15293:15468" ph="INSERT INTO artikl... " />
-                <marker date="1514143850846" expanded="true" signature="15293:15496" ph="INSERT INTO artikl... " />
-                <marker date="1514143850846" expanded="true" signature="15293:15521" ph="INSERT INTO artikl... " />
-                <marker date="1514143850846" expanded="true" signature="16450:16689" ph="UPDATE tip_d... " />
+                <marker date="1514146073141" expanded="true" signature="1524:1548" ph="SELECT * FRO... zaposlenik" />
+                <marker date="1514146073141" expanded="true" signature="2476:2511" ph="DELETE FROM " />
+                <marker date="1514146073141" expanded="true" signature="2971:3102" ph="INSERT INTO zaposlenik... " />
+                <marker date="1514146073141" expanded="true" signature="3982:4079" ph="UPDATE zapos... " />
+                <marker date="1514146073141" expanded="true" signature="3982:4080" ph="UPDATE zapos... " />
+                <marker date="1514146073141" expanded="true" signature="3982:4115" ph="UPDATE zapos... " />
+                <marker date="1514146073141" expanded="true" signature="5137:5167" ph="SELECT * FRO... poslovni_partner" />
+                <marker date="1514146073141" expanded="true" signature="6045:6086" ph="DELETE FROM " />
+                <marker date="1514146073141" expanded="true" signature="6566:6706" ph="INSERT INTO zaposlenik... " />
+                <marker date="1514146073141" expanded="true" signature="7579:7720" ph="UPDATE zapos... " />
+                <marker date="1514146073141" expanded="true" signature="8556:8586" ph="DELETE FROM " />
+                <marker date="1514146073141" expanded="true" signature="9026:9062" ph="INSERT INTO mjera... " />
+                <marker date="1514146073141" expanded="true" signature="9026:9076" ph="INSERT INTO poslovni_partner... " />
+                <marker date="1514146073141" expanded="true" signature="9591:9646" ph="UPDATE mjera... " />
+                <marker date="1514146073141" expanded="true" signature="10329:10348" ph="SELECT * FRO... mjera" />
+                <marker date="1514146073141" expanded="true" signature="11022:11049" ph="SELECT * FRO... tip_dokumenta" />
+                <marker date="1514146073141" expanded="true" signature="11605:11643" ph="DELETE FROM " />
+                <marker date="1514146073141" expanded="true" signature="12111:12165" ph="INSERT INTO tip_dokumenta... " />
+                <marker date="1514146073141" expanded="true" signature="12711:12770" ph="UPDATE tip_d... " />
+                <marker date="1514146073141" expanded="true" signature="13335:13425" ph="SELECT artik... artikl" />
+                <marker date="1514146073141" expanded="true" signature="14818:14849" ph="DELETE FROM " />
+                <marker date="1514146073141" expanded="true" signature="15293:15468" ph="INSERT INTO artikl... " />
+                <marker date="1514146073141" expanded="true" signature="15293:15496" ph="INSERT INTO artikl... " />
+                <marker date="1514146073141" expanded="true" signature="15293:15521" ph="INSERT INTO artikl... " />
+                <marker date="1514146073141" expanded="true" signature="16450:16689" ph="UPDATE tip_d... " />
               </folding>
             </state>
           </provider>
@@ -171,6 +182,7 @@
     <findStrings>
       <find>onDokumentiButtonClicked</find>
       <find>isNum</find>
+      <find>getAllMjera</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -216,10 +228,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/SkladisteView.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/Artikl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ArtiklEditView.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/SkladisteController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/Mjera.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/PoslovniPartnerEditController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/utils/ApplicationUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/SkladisteController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ArtiklEditController.java" />
       </list>
@@ -488,12 +500,20 @@
       <updated>1514014198190</updated>
       <workItem from="1514014202550" duration="24672000" />
       <workItem from="1514128024139" duration="6236000" />
-      <workItem from="1514136862789" duration="6414000" />
+      <workItem from="1514136862789" duration="8600000" />
     </task>
+    <task id="LOCAL-00001" summary="Dodan prikaz artikala. Dodano dodavanje novog artikla.">
+      <created>1514144058587</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1514144058588</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37322000" />
+    <option name="totallyTimeSpent" value="39508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -501,7 +521,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -520,7 +540,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -569,7 +589,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -618,31 +638,31 @@
         <state relative-caret-position="6678">
           <caret line="326" column="0" lean-forward="false" selection-start-line="326" selection-start-column="0" selection-end-line="326" selection-end-column="0" />
           <folding>
-            <marker date="1514143850846" expanded="true" signature="1524:1548" ph="SELECT * FRO... zaposlenik" />
-            <marker date="1514143850846" expanded="true" signature="2476:2511" ph="DELETE FROM " />
-            <marker date="1514143850846" expanded="true" signature="2971:3102" ph="INSERT INTO zaposlenik... " />
-            <marker date="1514143850846" expanded="true" signature="3982:4079" ph="UPDATE zapos... " />
-            <marker date="1514143850846" expanded="true" signature="3982:4080" ph="UPDATE zapos... " />
-            <marker date="1514143850846" expanded="true" signature="3982:4115" ph="UPDATE zapos... " />
-            <marker date="1514143850846" expanded="true" signature="5137:5167" ph="SELECT * FRO... poslovni_partner" />
-            <marker date="1514143850846" expanded="true" signature="6045:6086" ph="DELETE FROM " />
-            <marker date="1514143850846" expanded="true" signature="6566:6706" ph="INSERT INTO zaposlenik... " />
-            <marker date="1514143850846" expanded="true" signature="7579:7720" ph="UPDATE zapos... " />
-            <marker date="1514143850846" expanded="true" signature="8556:8586" ph="DELETE FROM " />
-            <marker date="1514143850846" expanded="true" signature="9026:9062" ph="INSERT INTO mjera... " />
-            <marker date="1514143850846" expanded="true" signature="9026:9076" ph="INSERT INTO poslovni_partner... " />
-            <marker date="1514143850846" expanded="true" signature="9591:9646" ph="UPDATE mjera... " />
-            <marker date="1514143850846" expanded="true" signature="10329:10348" ph="SELECT * FRO... mjera" />
-            <marker date="1514143850846" expanded="true" signature="11022:11049" ph="SELECT * FRO... tip_dokumenta" />
-            <marker date="1514143850846" expanded="true" signature="11605:11643" ph="DELETE FROM " />
-            <marker date="1514143850846" expanded="true" signature="12111:12165" ph="INSERT INTO tip_dokumenta... " />
-            <marker date="1514143850846" expanded="true" signature="12711:12770" ph="UPDATE tip_d... " />
-            <marker date="1514143850846" expanded="true" signature="13335:13425" ph="SELECT artik... artikl" />
-            <marker date="1514143850846" expanded="true" signature="14818:14849" ph="DELETE FROM " />
-            <marker date="1514143850846" expanded="true" signature="15293:15468" ph="INSERT INTO artikl... " />
-            <marker date="1514143850846" expanded="true" signature="15293:15496" ph="INSERT INTO artikl... " />
-            <marker date="1514143850846" expanded="true" signature="15293:15521" ph="INSERT INTO artikl... " />
-            <marker date="1514143850846" expanded="true" signature="16450:16689" ph="UPDATE tip_d... " />
+            <marker date="1514146073141" expanded="true" signature="1524:1548" ph="SELECT * FRO... zaposlenik" />
+            <marker date="1514146073141" expanded="true" signature="2476:2511" ph="DELETE FROM " />
+            <marker date="1514146073141" expanded="true" signature="2971:3102" ph="INSERT INTO zaposlenik... " />
+            <marker date="1514146073141" expanded="true" signature="3982:4079" ph="UPDATE zapos... " />
+            <marker date="1514146073141" expanded="true" signature="3982:4080" ph="UPDATE zapos... " />
+            <marker date="1514146073141" expanded="true" signature="3982:4115" ph="UPDATE zapos... " />
+            <marker date="1514146073141" expanded="true" signature="5137:5167" ph="SELECT * FRO... poslovni_partner" />
+            <marker date="1514146073141" expanded="true" signature="6045:6086" ph="DELETE FROM " />
+            <marker date="1514146073141" expanded="true" signature="6566:6706" ph="INSERT INTO zaposlenik... " />
+            <marker date="1514146073141" expanded="true" signature="7579:7720" ph="UPDATE zapos... " />
+            <marker date="1514146073141" expanded="true" signature="8556:8586" ph="DELETE FROM " />
+            <marker date="1514146073141" expanded="true" signature="9026:9062" ph="INSERT INTO mjera... " />
+            <marker date="1514146073141" expanded="true" signature="9026:9076" ph="INSERT INTO poslovni_partner... " />
+            <marker date="1514146073141" expanded="true" signature="9591:9646" ph="UPDATE mjera... " />
+            <marker date="1514146073141" expanded="true" signature="10329:10348" ph="SELECT * FRO... mjera" />
+            <marker date="1514146073141" expanded="true" signature="11022:11049" ph="SELECT * FRO... tip_dokumenta" />
+            <marker date="1514146073141" expanded="true" signature="11605:11643" ph="DELETE FROM " />
+            <marker date="1514146073141" expanded="true" signature="12111:12165" ph="INSERT INTO tip_dokumenta... " />
+            <marker date="1514146073141" expanded="true" signature="12711:12770" ph="UPDATE tip_d... " />
+            <marker date="1514146073141" expanded="true" signature="13335:13425" ph="SELECT artik... artikl" />
+            <marker date="1514146073141" expanded="true" signature="14818:14849" ph="DELETE FROM " />
+            <marker date="1514146073141" expanded="true" signature="15293:15468" ph="INSERT INTO artikl... " />
+            <marker date="1514146073141" expanded="true" signature="15293:15496" ph="INSERT INTO artikl... " />
+            <marker date="1514146073141" expanded="true" signature="15293:15521" ph="INSERT INTO artikl... " />
+            <marker date="1514146073141" expanded="true" signature="16450:16689" ph="UPDATE tip_d... " />
           </folding>
         </state>
       </provider>
@@ -698,31 +718,31 @@
         <state relative-caret-position="4872">
           <caret line="239" column="33" lean-forward="false" selection-start-line="239" selection-start-column="33" selection-end-line="239" selection-end-column="33" />
           <folding>
-            <marker date="1514143850846" expanded="true" signature="1524:1548" ph="SELECT * FRO... zaposlenik" />
-            <marker date="1514143850846" expanded="true" signature="2476:2511" ph="DELETE FROM " />
-            <marker date="1514143850846" expanded="true" signature="2971:3102" ph="INSERT INTO zaposlenik... " />
-            <marker date="1514143850846" expanded="true" signature="3982:4079" ph="UPDATE zapos... " />
-            <marker date="1514143850846" expanded="true" signature="3982:4080" ph="UPDATE zapos... " />
-            <marker date="1514143850846" expanded="true" signature="3982:4115" ph="UPDATE zapos... " />
-            <marker date="1514143850846" expanded="true" signature="5137:5167" ph="SELECT * FRO... poslovni_partner" />
-            <marker date="1514143850846" expanded="true" signature="6045:6086" ph="DELETE FROM " />
-            <marker date="1514143850846" expanded="true" signature="6566:6706" ph="INSERT INTO zaposlenik... " />
-            <marker date="1514143850846" expanded="true" signature="7579:7720" ph="UPDATE zapos... " />
-            <marker date="1514143850846" expanded="true" signature="8556:8586" ph="DELETE FROM " />
-            <marker date="1514143850846" expanded="true" signature="9026:9062" ph="INSERT INTO mjera... " />
-            <marker date="1514143850846" expanded="true" signature="9026:9076" ph="INSERT INTO poslovni_partner... " />
-            <marker date="1514143850846" expanded="true" signature="9591:9646" ph="UPDATE mjera... " />
-            <marker date="1514143850846" expanded="true" signature="10329:10348" ph="SELECT * FRO... mjera" />
-            <marker date="1514143850846" expanded="true" signature="11022:11049" ph="SELECT * FRO... tip_dokumenta" />
-            <marker date="1514143850846" expanded="true" signature="11605:11643" ph="DELETE FROM " />
-            <marker date="1514143850846" expanded="true" signature="12111:12165" ph="INSERT INTO tip_dokumenta... " />
-            <marker date="1514143850846" expanded="true" signature="12711:12770" ph="UPDATE tip_d... " />
-            <marker date="1514143850846" expanded="true" signature="13335:13425" ph="SELECT artik... artikl" />
-            <marker date="1514143850846" expanded="true" signature="14818:14849" ph="DELETE FROM " />
-            <marker date="1514143850846" expanded="true" signature="15293:15468" ph="INSERT INTO artikl... " />
-            <marker date="1514143850846" expanded="true" signature="15293:15496" ph="INSERT INTO artikl... " />
-            <marker date="1514143850846" expanded="true" signature="15293:15521" ph="INSERT INTO artikl... " />
-            <marker date="1514143850846" expanded="true" signature="16450:16689" ph="UPDATE tip_d... " />
+            <marker date="1514146073141" expanded="true" signature="1524:1548" ph="SELECT * FRO... zaposlenik" />
+            <marker date="1514146073141" expanded="true" signature="2476:2511" ph="DELETE FROM " />
+            <marker date="1514146073141" expanded="true" signature="2971:3102" ph="INSERT INTO zaposlenik... " />
+            <marker date="1514146073141" expanded="true" signature="3982:4079" ph="UPDATE zapos... " />
+            <marker date="1514146073141" expanded="true" signature="3982:4080" ph="UPDATE zapos... " />
+            <marker date="1514146073141" expanded="true" signature="3982:4115" ph="UPDATE zapos... " />
+            <marker date="1514146073141" expanded="true" signature="5137:5167" ph="SELECT * FRO... poslovni_partner" />
+            <marker date="1514146073141" expanded="true" signature="6045:6086" ph="DELETE FROM " />
+            <marker date="1514146073141" expanded="true" signature="6566:6706" ph="INSERT INTO zaposlenik... " />
+            <marker date="1514146073141" expanded="true" signature="7579:7720" ph="UPDATE zapos... " />
+            <marker date="1514146073141" expanded="true" signature="8556:8586" ph="DELETE FROM " />
+            <marker date="1514146073141" expanded="true" signature="9026:9062" ph="INSERT INTO mjera... " />
+            <marker date="1514146073141" expanded="true" signature="9026:9076" ph="INSERT INTO poslovni_partner... " />
+            <marker date="1514146073141" expanded="true" signature="9591:9646" ph="UPDATE mjera... " />
+            <marker date="1514146073141" expanded="true" signature="10329:10348" ph="SELECT * FRO... mjera" />
+            <marker date="1514146073141" expanded="true" signature="11022:11049" ph="SELECT * FRO... tip_dokumenta" />
+            <marker date="1514146073141" expanded="true" signature="11605:11643" ph="DELETE FROM " />
+            <marker date="1514146073141" expanded="true" signature="12111:12165" ph="INSERT INTO tip_dokumenta... " />
+            <marker date="1514146073141" expanded="true" signature="12711:12770" ph="UPDATE tip_d... " />
+            <marker date="1514146073141" expanded="true" signature="13335:13425" ph="SELECT artik... artikl" />
+            <marker date="1514146073141" expanded="true" signature="14818:14849" ph="DELETE FROM " />
+            <marker date="1514146073141" expanded="true" signature="15293:15468" ph="INSERT INTO artikl... " />
+            <marker date="1514146073141" expanded="true" signature="15293:15496" ph="INSERT INTO artikl... " />
+            <marker date="1514146073141" expanded="true" signature="15293:15521" ph="INSERT INTO artikl... " />
+            <marker date="1514146073141" expanded="true" signature="16450:16689" ph="UPDATE tip_d... " />
           </folding>
         </state>
       </provider>
@@ -952,50 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/Artikl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="92" column="45" lean-forward="false" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
-          <folding>
-            <element signature="e#1762#1763#0" expanded="true" />
-            <element signature="e#1787#1788#0" expanded="true" />
-            <element signature="e#1820#1821#0" expanded="true" />
-            <element signature="e#1848#1849#0" expanded="true" />
-            <element signature="e#1880#1881#0" expanded="true" />
-            <element signature="e#1908#1909#0" expanded="true" />
-            <element signature="e#1950#1951#0" expanded="true" />
-            <element signature="e#1984#1985#0" expanded="true" />
-            <element signature="e#2027#2028#0" expanded="true" />
-            <element signature="e#2069#2070#0" expanded="true" />
-            <element signature="e#2136#2137#0" expanded="true" />
-            <element signature="e#2198#2199#0" expanded="true" />
-            <element signature="e#2237#2238#0" expanded="true" />
-            <element signature="e#2275#2276#0" expanded="true" />
-            <element signature="e#2334#2335#0" expanded="true" />
-            <element signature="e#2388#2389#0" expanded="true" />
-            <element signature="e#2430#2431#0" expanded="true" />
-            <element signature="e#2468#2469#0" expanded="true" />
-            <element signature="e#2530#2531#0" expanded="true" />
-            <element signature="e#2584#2585#0" expanded="true" />
-            <element signature="e#2625#2626#0" expanded="true" />
-            <element signature="e#2665#2666#0" expanded="true" />
-            <element signature="e#2728#2729#0" expanded="true" />
-            <element signature="e#2786#2787#0" expanded="true" />
-            <element signature="e#2876#2877#0" expanded="true" />
-            <element signature="e#3053#3054#0" expanded="true" />
-            <element signature="e#3090#3091#0" expanded="true" />
-            <element signature="e#3150#3151#0" expanded="true" />
-            <element signature="e#3202#3203#0" expanded="true" />
-            <element signature="e#3233#3234#0" expanded="true" />
-            <element signature="e#3263#3264#0" expanded="true" />
-            <element signature="e#3306#3307#0" expanded="true" />
-            <element signature="e#3344#3345#0" expanded="true" />
-            <element signature="e#3404#3405#0" expanded="true" />
-            <element signature="e#3460#3461#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/TipDokumentaController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -1020,7 +996,7 @@
         <state relative-caret-position="378">
           <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
           <folding>
-            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1040,54 +1016,6 @@
           <folding>
             <element signature="e#763#764#0" expanded="true" />
             <element signature="e#791#792#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="346" column="49" lean-forward="false" selection-start-line="346" selection-start-column="49" selection-end-line="346" selection-end-column="49" />
-          <folding>
-            <marker date="1514143850846" expanded="true" signature="1524:1548" ph="SELECT * FRO... zaposlenik" />
-            <marker date="1514143850846" expanded="true" signature="2476:2511" ph="DELETE FROM " />
-            <marker date="1514143850846" expanded="true" signature="2971:3102" ph="INSERT INTO zaposlenik... " />
-            <marker date="1514143850846" expanded="true" signature="3982:4079" ph="UPDATE zapos... " />
-            <marker date="1514143850846" expanded="true" signature="3982:4080" ph="UPDATE zapos... " />
-            <marker date="1514143850846" expanded="true" signature="3982:4115" ph="UPDATE zapos... " />
-            <marker date="1514143850846" expanded="true" signature="5137:5167" ph="SELECT * FRO... poslovni_partner" />
-            <marker date="1514143850846" expanded="true" signature="6045:6086" ph="DELETE FROM " />
-            <marker date="1514143850846" expanded="true" signature="6566:6706" ph="INSERT INTO zaposlenik... " />
-            <marker date="1514143850846" expanded="true" signature="7579:7720" ph="UPDATE zapos... " />
-            <marker date="1514143850846" expanded="true" signature="8556:8586" ph="DELETE FROM " />
-            <marker date="1514143850846" expanded="true" signature="9026:9062" ph="INSERT INTO mjera... " />
-            <marker date="1514143850846" expanded="true" signature="9026:9076" ph="INSERT INTO poslovni_partner... " />
-            <marker date="1514143850846" expanded="true" signature="9591:9646" ph="UPDATE mjera... " />
-            <marker date="1514143850846" expanded="true" signature="10329:10348" ph="SELECT * FRO... mjera" />
-            <marker date="1514143850846" expanded="true" signature="11022:11049" ph="SELECT * FRO... tip_dokumenta" />
-            <marker date="1514143850846" expanded="true" signature="11605:11643" ph="DELETE FROM " />
-            <marker date="1514143850846" expanded="true" signature="12111:12165" ph="INSERT INTO tip_dokumenta... " />
-            <marker date="1514143850846" expanded="true" signature="12711:12770" ph="UPDATE tip_d... " />
-            <marker date="1514143850846" expanded="true" signature="13335:13425" ph="SELECT artik... artikl" />
-            <marker date="1514143850846" expanded="true" signature="14818:14849" ph="DELETE FROM " />
-            <marker date="1514143850846" expanded="true" signature="15293:15468" ph="INSERT INTO artikl... " />
-            <marker date="1514143850846" expanded="true" signature="15293:15496" ph="INSERT INTO artikl... " />
-            <marker date="1514143850846" expanded="true" signature="15293:15521" ph="INSERT INTO artikl... " />
-            <marker date="1514143850846" expanded="true" signature="16450:16689" ph="UPDATE tip_d... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ArtiklEditController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="76" column="53" lean-forward="true" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2289#2290#0" expanded="true" />
-            <element signature="e#2339#2340#0" expanded="true" />
-            <element signature="e#2380#2381#0" expanded="true" />
-            <element signature="e#2414#2415#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1118,22 +1046,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/PoslovniPartnerEditController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="231">
+          <caret line="47" column="20" lean-forward="false" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/Artikl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/SkladisteController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
-          <caret line="89" column="89" lean-forward="false" selection-start-line="89" selection-start-column="89" selection-end-line="89" selection-end-column="89" />
+          <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3907#3908#0" expanded="true" />
-            <element signature="e#3937#3938#0" expanded="true" />
+            <element signature="e#4790#4791#0" expanded="true" />
+            <element signature="e#4820#4821#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="417" column="0" lean-forward="false" selection-start-line="417" selection-start-column="0" selection-end-line="417" selection-end-column="0" />
+          <folding>
+            <marker date="1514146073141" expanded="true" signature="1524:1548" ph="SELECT * FRO... zaposlenik" />
+            <marker date="1514146073141" expanded="true" signature="2476:2511" ph="DELETE FROM " />
+            <marker date="1514146073141" expanded="true" signature="2971:3102" ph="INSERT INTO zaposlenik... " />
+            <marker date="1514146073141" expanded="true" signature="3982:4079" ph="UPDATE zapos... " />
+            <marker date="1514146073141" expanded="true" signature="3982:4080" ph="UPDATE zapos... " />
+            <marker date="1514146073141" expanded="true" signature="3982:4115" ph="UPDATE zapos... " />
+            <marker date="1514146073141" expanded="true" signature="5137:5167" ph="SELECT * FRO... poslovni_partner" />
+            <marker date="1514146073141" expanded="true" signature="6045:6086" ph="DELETE FROM " />
+            <marker date="1514146073141" expanded="true" signature="6566:6706" ph="INSERT INTO zaposlenik... " />
+            <marker date="1514146073141" expanded="true" signature="7579:7720" ph="UPDATE zapos... " />
+            <marker date="1514146073141" expanded="true" signature="8556:8586" ph="DELETE FROM " />
+            <marker date="1514146073141" expanded="true" signature="9026:9062" ph="INSERT INTO mjera... " />
+            <marker date="1514146073141" expanded="true" signature="9026:9076" ph="INSERT INTO poslovni_partner... " />
+            <marker date="1514146073141" expanded="true" signature="9591:9646" ph="UPDATE mjera... " />
+            <marker date="1514146073141" expanded="true" signature="10329:10348" ph="SELECT * FRO... mjera" />
+            <marker date="1514146073141" expanded="true" signature="11022:11049" ph="SELECT * FRO... tip_dokumenta" />
+            <marker date="1514146073141" expanded="true" signature="11605:11643" ph="DELETE FROM " />
+            <marker date="1514146073141" expanded="true" signature="12111:12165" ph="INSERT INTO tip_dokumenta... " />
+            <marker date="1514146073141" expanded="true" signature="12711:12770" ph="UPDATE tip_d... " />
+            <marker date="1514146073141" expanded="true" signature="13335:13425" ph="SELECT artik... artikl" />
+            <marker date="1514146073141" expanded="true" signature="14818:14849" ph="DELETE FROM " />
+            <marker date="1514146073141" expanded="true" signature="15293:15468" ph="INSERT INTO artikl... " />
+            <marker date="1514146073141" expanded="true" signature="15293:15496" ph="INSERT INTO artikl... " />
+            <marker date="1514146073141" expanded="true" signature="15293:15521" ph="INSERT INTO artikl... " />
+            <marker date="1514146073141" expanded="true" signature="16450:16689" ph="UPDATE tip_d... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ArtiklEditController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="68" column="34" lean-forward="true" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3434#3435#0" expanded="true" />
+            <element signature="e#3484#3485#0" expanded="true" />
+            <element signature="e#3525#3526#0" expanded="true" />
+            <element signature="e#3559#3560#0" expanded="true" />
           </folding>
         </state>
       </provider>

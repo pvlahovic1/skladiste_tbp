@@ -19,6 +19,7 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
 import static hr.foi.utils.ApplicationUtils.isIntegerAndBiggerThen;
 import static hr.foi.utils.ApplicationUtils.isNumberAndBiggerThen;
@@ -34,6 +35,8 @@ public class ArtiklEditController implements Initializable {
     @FXML private TextField troskoviNabaveTextArea;
     @FXML private ComboBox<Mjera> mjeraComboBox;
     private Stage stage;
+    private boolean isEditing;
+    private Artikl editingArtikl;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -56,6 +59,26 @@ public class ArtiklEditController implements Initializable {
         }
     }
 
+    public void setEditingArtikl(Artikl editingArtikl) {
+        isEditing = true;
+        this.editingArtikl = editingArtikl;
+
+        nazivTextArea.setText(editingArtikl.getNaziv());
+        kolicinaNaSkladistuTextArea.setText(String.valueOf(editingArtikl.getKolicinaNaSkladistu()));
+        minimalneZaliheTextArea.setText(String.valueOf(editingArtikl.getMinimalneZalihe()));
+        jedinicnaCijenaTextArea.setText(String.valueOf(editingArtikl.getJedinicnaCijena()));
+        godisnjaPotraznjaTextArea.setText(String.valueOf(editingArtikl.getGodisnjaPotraznja()));
+        troskoviSkladistenjaTextArea.setText(String.valueOf(editingArtikl.getTroskoviSkladistenja()));
+        troskoviNabaveTextArea.setText(String.valueOf(editingArtikl.getTroskoviNabave()));
+
+        List<Mjera> mjere = mjeraComboBox.getItems().stream()
+                .filter(e -> e.getId() == editingArtikl.getIdMjere()).collect(Collectors.toList());
+
+        if (!mjere.isEmpty()) {
+            mjeraComboBox.getSelectionModel().select(mjere.get(0));
+        }
+    }
+
     private DatabaseDataChangedListener databaseDataChangedListener;
 
     public DatabaseDataChangedListener getDatabaseDataChangedListener() {
@@ -72,21 +95,34 @@ public class ArtiklEditController implements Initializable {
 
     public void onPohraniButtonClicked() {
         if (isFormValid()) {
-
-            Artikl artikl = new Artikl();
-            artikl.setNaziv(nazivTextArea.getText());
-            artikl.setKolicinaNaSkladistu(Integer.valueOf(kolicinaNaSkladistuTextArea.getText()));
-            artikl.setMinimalneZalihe(Integer.valueOf(minimalneZaliheTextArea.getText()));
-            artikl.setJedinicnaCijena(Double.valueOf(jedinicnaCijenaTextArea.getText()));
-            artikl.setTroskoviSkladistenja(Double.valueOf(troskoviSkladistenjaTextArea.getText()));
-            artikl.setTroskoviNabave(Double.valueOf(troskoviNabaveTextArea.getText()));
-            artikl.setGodisnjaPotraznja(Integer.valueOf(godisnjaPotraznjaTextArea.getText()));
-            artikl.setIdMjere(mjeraComboBox.getValue().getId());
-
             DatabaseWorker databaseWorker = DatabaseWorker.getInstance();
 
             try {
-                databaseWorker.saveNewArtikl(artikl);
+                if (isEditing) {
+                    editingArtikl.setNaziv(nazivTextArea.getText());
+                    editingArtikl.setKolicinaNaSkladistu(Integer.valueOf(kolicinaNaSkladistuTextArea.getText()));
+                    editingArtikl.setMinimalneZalihe(Integer.valueOf(minimalneZaliheTextArea.getText()));
+                    editingArtikl.setJedinicnaCijena(Double.valueOf(jedinicnaCijenaTextArea.getText()));
+                    editingArtikl.setTroskoviSkladistenja(Double.valueOf(troskoviSkladistenjaTextArea.getText()));
+                    editingArtikl.setTroskoviNabave(Double.valueOf(troskoviNabaveTextArea.getText()));
+                    editingArtikl.setGodisnjaPotraznja(Integer.valueOf(godisnjaPotraznjaTextArea.getText()));
+                    editingArtikl.setIdMjere(mjeraComboBox.getValue().getId());
+
+                    databaseWorker.saveExistingArtikl(editingArtikl);
+                } else {
+                    Artikl artikl = new Artikl();
+                    artikl.setNaziv(nazivTextArea.getText());
+                    artikl.setKolicinaNaSkladistu(Integer.valueOf(kolicinaNaSkladistuTextArea.getText()));
+                    artikl.setMinimalneZalihe(Integer.valueOf(minimalneZaliheTextArea.getText()));
+                    artikl.setJedinicnaCijena(Double.valueOf(jedinicnaCijenaTextArea.getText()));
+                    artikl.setTroskoviSkladistenja(Double.valueOf(troskoviSkladistenjaTextArea.getText()));
+                    artikl.setTroskoviNabave(Double.valueOf(troskoviNabaveTextArea.getText()));
+                    artikl.setGodisnjaPotraznja(Integer.valueOf(godisnjaPotraznjaTextArea.getText()));
+                    artikl.setIdMjere(mjeraComboBox.getValue().getId());
+
+                    databaseWorker.saveNewArtikl(artikl);
+                }
+
                 databaseDataChangedListener.onDataChanged();
                 stage.close();
             } catch (SQLException e) {
