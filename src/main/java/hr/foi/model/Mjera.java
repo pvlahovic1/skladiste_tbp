@@ -38,4 +38,9 @@ public class Mjera {
     public void setSkracenica(String skracenica) {
         this.skracenica = skracenica;
     }
+
+    @Override
+    public String toString() {
+        return naziv;
+    }
 }

@@ -7,26 +7,20 @@
 <?import javafx.scene.layout.*?>
 
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.foi.controller.SkladisteController">
+<Pane prefHeight="780.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.foi.controller.SkladisteController">
    <children>
-      <TitledPane animated="false" text="Artikli">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="373.0" prefWidth="1022.0">
-               <children>
-                  <TableView layoutX="14.0" layoutY="14.0" prefHeight="228.0" prefWidth="996.0">
-                    <columns>
-                      <TableColumn prefWidth="75.0" text="C1" />
-                      <TableColumn prefWidth="75.0" text="C2" />
-                    </columns>
-                  </TableView>
-               </children>
-            </AnchorPane>
-        </content>
-      </TitledPane>
-      <TitledPane animated="false" text="Novi Artikl">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="306.0" prefWidth="1022.0" />
-        </content>
-      </TitledPane>
+      <TableView fx:id="artikliTableView" layoutX="11.0" layoutY="35.0" prefHeight="625.0" prefWidth="1002.0">
+        <columns>
+          <TableColumn fx:id="collNaziv" prefWidth="281.0" text="Naziv" />
+          <TableColumn fx:id="collKolicinaNaSkladistu" prefWidth="153.0" text="Količina na skladištu" />
+            <TableColumn fx:id="collMinimalneZalihe" prefWidth="159.0" text="Minimalne zalihe" />
+            <TableColumn fx:id="collJedinicnaCijena" prefWidth="122.0" text="Jedinična cijena" />
+            <TableColumn fx:id="collGodisnjaPotraznja" prefWidth="146.0" text="Godišnja potražnja" />
+            <TableColumn fx:id="collTroskoviNabave" prefWidth="140.0" text="Troškovi nabave" />
+        </columns>
+      </TableView>
+      <Button layoutX="21.0" layoutY="674.0" mnemonicParsing="false" onAction="#onIzmjeniButtonClicked" prefHeight="48.0" prefWidth="108.0" text="Izmjeni" />
+      <Button layoutX="136.0" layoutY="674.0" mnemonicParsing="false" onAction="#onNovoButtonClicked" prefHeight="48.0" prefWidth="108.0" text="Novi" />
+      <Button layoutX="252.0" layoutY="674.0" mnemonicParsing="false" onAction="#onObrisiButtonClicked" prefHeight="48.0" prefWidth="108.0" text="Obriši" />
    </children>
-</VBox>
+</Pane>

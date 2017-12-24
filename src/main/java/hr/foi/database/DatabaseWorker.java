@@ -1,9 +1,6 @@
 package hr.foi.database;
 
-import hr.foi.model.Mjera;
-import hr.foi.model.PoslovniPartner;
-import hr.foi.model.TipDokumenta;
-import hr.foi.model.Zaposlenik;
+import hr.foi.model.*;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -323,6 +320,96 @@ public class DatabaseWorker {
         preparedStatement.setString(1, tipDokumenta.getNaziv());
         preparedStatement.setString(2, tipDokumenta.getAkcija());
         preparedStatement.setInt(3, tipDokumenta.getId());
+
+        preparedStatement.executeUpdate();
+
+        closeConnectionToDatabase(connection, Collections.singletonList(preparedStatement));
+    }
+
+    public List<Artikl> getAllArtikl() throws SQLException {
+        List<Artikl> artikli = new ArrayList<>();
+
+        String selectSQL = "SELECT artikl.*, mjera.naziv as mjera FROM artikl JOIN mjera ON artikl.id_mjere = mjera.id;";
+
+        Connection connection = openConnectionToDatabase();
+        Statement statement = connection.createStatement();
+
+        ResultSet rs = statement.executeQuery(selectSQL);
+
+        while ( rs.next() ) {
+            int id = rs.getInt("id");
+            String naziv = rs.getString("naziv");
+            int kolicinaNaSkladistu = rs.getInt("kolicina_na_skladistu");
+            int minimalneZalihe = rs.getInt("minimalne_zalihe");
+            double jedinicnaCijena = rs.getDouble("jedinicna_cijena");
+            int godisnjaPotraznja = rs.getInt("godisnja_potraznja");
+            double troskoviSkladistenja = rs.getDouble("troskovi_skladistenja");
+            double troskoviNabave = rs.getDouble("troskovi_nabave");
+            int idMjere = rs.getInt("id_mjere");
+            String mjera = rs.getString("mjera");
+
+            String kolicinaMjera = String.valueOf(kolicinaNaSkladistu) + " (" + mjera + ")";
+
+            artikli.add(new Artikl(id, naziv, kolicinaNaSkladistu, minimalneZalihe, jedinicnaCijena, godisnjaPotraznja, troskoviSkladistenja, troskoviNabave, idMjere, kolicinaMjera));
+        }
+
+        closeConnectionToDatabase(connection, Collections.singletonList(statement));
+
+        return artikli;
+    }
+
+    public void deleteArtikl(Artikl artikl) throws SQLException {
+        Connection connection = openConnectionToDatabase();
+
+        String deleteSQL = "DELETE FROM artikl WHERE id = ?";
+
+        PreparedStatement preparedStatement = connection.prepareStatement(deleteSQL);
+        preparedStatement.setInt(1, artikl.getId());
+
+        preparedStatement.executeUpdate();
+
+        closeConnectionToDatabase(connection, Collections.singletonList(preparedStatement));
+    }
+
+    public void saveNewArtikl(Artikl artikl) throws SQLException {
+        Connection connection = openConnectionToDatabase();
+
+        String insertSQL = "INSERT INTO artikl(naziv, kolicina_na_skladistu, minimalne_zalihe, jedinicna_cijena, " +
+                "godisnja_potraznja, troskovi_skladistenja, troskovi_nabave, id_mjere) " +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
+
+        PreparedStatement preparedStatement = connection.prepareStatement(insertSQL);
+        preparedStatement.setString(1, artikl.getNaziv());
+        preparedStatement.setInt(2, artikl.getKolicinaNaSkladistu());
+        preparedStatement.setInt(3, artikl.getMinimalneZalihe());
+        preparedStatement.setDouble(4, artikl.getJedinicnaCijena());
+        preparedStatement.setInt(5, artikl.getGodisnjaPotraznja());
+        preparedStatement.setDouble(6, artikl.getTroskoviSkladistenja());
+        preparedStatement.setDouble(7, artikl.getTroskoviNabave());
+        preparedStatement.setInt(8, artikl.getIdMjere());
+
+        preparedStatement.executeUpdate();
+
+        closeConnectionToDatabase(connection, Collections.singletonList(preparedStatement));
+    }
+
+    public void saveExistingArtikl(Artikl artikl) throws SQLException {
+        Connection connection = openConnectionToDatabase();
+
+        String updateSQL = "UPDATE artikl SET naziv = ?, kolicina_na_skladistu = ?, minimalne_zalihe = ?, " +
+                "jedinicna_cijena = ?, godisnja_potraznja = ?, troskovi_skladistenja = ?, troskovi_nabave = ?, " +
+                "id_mjere = ? WHERE id = ?";
+
+        PreparedStatement preparedStatement = connection.prepareStatement(updateSQL);
+        preparedStatement.setString(1, artikl.getNaziv());
+        preparedStatement.setInt(2, artikl.getKolicinaNaSkladistu());
+        preparedStatement.setInt(3, artikl.getMinimalneZalihe());
+        preparedStatement.setDouble(4, artikl.getJedinicnaCijena());
+        preparedStatement.setInt(5, artikl.getGodisnjaPotraznja());
+        preparedStatement.setDouble(6, artikl.getTroskoviSkladistenja());
+        preparedStatement.setDouble(7, artikl.getTroskoviNabave());
+        preparedStatement.setInt(8, artikl.getIdMjere());
+        preparedStatement.setInt(9, artikl.getId());
 
         preparedStatement.executeUpdate();
 

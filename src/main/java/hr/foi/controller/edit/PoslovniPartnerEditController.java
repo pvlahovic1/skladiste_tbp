@@ -3,7 +3,6 @@ package hr.foi.controller.edit;
 import hr.foi.core.DatabaseDataChangedListener;
 import hr.foi.database.DatabaseWorker;
 import hr.foi.model.PoslovniPartner;
-import hr.foi.model.Zaposlenik;
 import hr.foi.utils.MessageDialogUtils;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -17,6 +16,7 @@ import java.sql.SQLException;
 import java.util.regex.Matcher;
 
 import static hr.foi.utils.ApplicationUtils.VALID_EMAIL_ADDRESS_REGEX;
+import static hr.foi.utils.ApplicationUtils.isInteger;
 
 public class PoslovniPartnerEditController {
 
@@ -120,7 +120,7 @@ public class PoslovniPartnerEditController {
             txtAdresa.setBorder(null);
         }
 
-        if (txtTelefon.getText().isEmpty() || !isNumber(txtTelefon.getText())) {
+        if (txtTelefon.getText().isEmpty() || !isInteger(txtTelefon.getText())) {
             isValid = false;
             txtTelefon.setBorder(errorBorder);
         } else {
@@ -140,10 +140,6 @@ public class PoslovniPartnerEditController {
     private boolean isMailValid(String email) {
         Matcher matcher = VALID_EMAIL_ADDRESS_REGEX .matcher(email);
         return matcher.find();
-    }
-
-    private boolean isNumber(String number) {
-        return number.matches("\\d+");
     }
 
 }
