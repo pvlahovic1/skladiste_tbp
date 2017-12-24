@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane prefHeight="780.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.foi.controller.TipDokumentaController">
+   <children>
+      <GridPane fx:id="editGridPane" layoutX="622.0" layoutY="303.0" prefHeight="150.0" prefWidth="368.0">
+         <children>
+            <Label text="Naziv" />
+            <Label text="Akcija" GridPane.rowIndex="1" />
+            <TextField fx:id="nazivTextView" prefHeight="31.0" prefWidth="284.0" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" onAction="#onPohraniButtonClicked" prefHeight="36.0" prefWidth="258.0" text="Pohrani" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <RadioButton fx:id="ulazRobeRadioButton" mnemonicParsing="false" text="Ulaz robe" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <RadioButton fx:id="izlazRobeRadioButton" mnemonicParsing="false" text="Izlaz robe" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="10.0" prefWidth="81.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="27.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="260.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Button layoutX="320.0" layoutY="700.0" mnemonicParsing="false" onAction="#onNovoButtonClicked" prefHeight="36.0" prefWidth="85.0" text="Novo" />
+      <Button layoutX="222.0" layoutY="700.0" mnemonicParsing="false" onAction="#onObrisiButtonClicked" prefHeight="36.0" prefWidth="85.0" text="Obriši" />
+      <Button layoutX="122.0" layoutY="700.0" mnemonicParsing="false" onAction="#onIzmjeniButtonClicked" prefHeight="36.0" prefWidth="85.0" text="Izmjeni" />
+      <TableView fx:id="tipDokumentaTableView" layoutX="33.0" layoutY="49.0" prefHeight="622.0" prefWidth="521.0">
+         <columns>
+            <TableColumn fx:id="collNaziv" prefWidth="252.0" text="Naziv" />
+            <TableColumn fx:id="collAkcija" prefWidth="267.0" text="Akcija" />
+         </columns>
+      </TableView>
+   </children>
+</Pane>
