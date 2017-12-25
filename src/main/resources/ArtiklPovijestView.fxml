@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.foi.controller.edit.PovijestController">
+   <children>
+      <TabPane prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Grafički prikaz">
+            <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <LineChart fx:id="povijestLineChart" layoutY="14.0" prefHeight="489.0" prefWidth="790.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                  </Pane>
+            </content>
+          </Tab>
+          <Tab text="Tablični prikaz">
+            <content>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="povijestTableView" layoutX="14.0" layoutY="27.0" prefHeight="507.0" prefWidth="772.0">
+                          <columns>
+                            <TableColumn fx:id="collDatum" prefWidth="366.0" text="Datum" />
+                            <TableColumn fx:id="collKolicina" minWidth="0.0" prefWidth="402.0" text="Količina" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </Pane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

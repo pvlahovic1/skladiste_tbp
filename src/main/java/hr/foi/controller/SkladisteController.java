@@ -1,6 +1,7 @@
 package hr.foi.controller;
 
 import hr.foi.controller.edit.ArtiklEditController;
+import hr.foi.controller.edit.PovijestController;
 import hr.foi.controller.edit.ZaposlenikEditController;
 import hr.foi.core.DatabaseDataChangedListener;
 import hr.foi.database.DatabaseWorker;
@@ -100,6 +101,29 @@ public class SkladisteController implements Initializable, DatabaseDataChangedLi
             } catch (SQLException e) {
                 MessageDialogUtils.showMessage(Alert.AlertType.ERROR, "Greška", "Došlo je do greške u radu s bazom podataka.",
                         "Razlog: " + e.getMessage());
+            }
+        }
+    }
+
+    public void onPovijestButtonClicked() {
+        Artikl artikl = artikliTableView.getSelectionModel().getSelectedItem();
+
+        if (artikl != null) {
+            Pane root;
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/ArtiklPovijestView.fxml"));
+                root = fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setTitle("Prikaz povijesti artikla: " + artikl.getNaziv());
+                stage.setScene(new Scene(root, 800, 600));
+
+                ((PovijestController)fxmlLoader.getController()).setIdArtikla(artikl.getId());
+                ((PovijestController)fxmlLoader.getController()).setStage(stage);
+
+                stage.show();
+            }
+            catch (IOException e) {
+                e.printStackTrace();
             }
         }
     }

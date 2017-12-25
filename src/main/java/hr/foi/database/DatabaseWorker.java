@@ -3,6 +3,7 @@ package hr.foi.database;
 import hr.foi.model.*;
 
 import java.sql.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -414,6 +415,33 @@ public class DatabaseWorker {
         preparedStatement.executeUpdate();
 
         closeConnectionToDatabase(connection, Collections.singletonList(preparedStatement));
+    }
+
+    public List<Povijest> getPovijestByArtiklId(int artiklId) throws SQLException {
+        List<Povijest> povijesti = new ArrayList<>();
+
+        String selectSQL = "SELECT povijest.*, artikl.naziv FROM povijest JOIN artikl ON povijest.id_artikla = artikl.id WHERE artikl.id = ?;";
+
+        Connection connection = openConnectionToDatabase();
+
+        PreparedStatement preparedStatement = connection.prepareStatement(selectSQL);
+        preparedStatement.setInt(1, artiklId);
+
+        ResultSet rs = preparedStatement.executeQuery();
+
+        while ( rs.next() ) {
+            int id = rs.getInt("id");
+            Timestamp vremenskaOznaka = rs.getTimestamp("vremenska_oznaka");
+            int kolicina = rs.getInt("kolicina");
+            int idArtikla = rs.getInt("Id_artikla");
+            String naziv = rs.getString("naziv");
+
+            povijesti.add(new Povijest(id, vremenskaOznaka.toLocalDateTime().toLocalDate(), kolicina, idArtikla, naziv));
+        }
+
+        closeConnectionToDatabase(connection, Collections.singletonList(preparedStatement));
+
+        return povijesti;
     }
 
 }
