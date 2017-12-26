@@ -193,16 +193,9 @@ public class NewDokumentCreationController implements Initializable {
 
             DatabaseWorker databaseWorker = DatabaseWorker.getInstance();
             try {
-
-                Dokument dokumentId = databaseWorker.saveNewDokument(dokument);
-
-                List<StavkaDokumenta> stavkeDokumenta = artikliTableView.getItems();
-
-                for (StavkaDokumenta stavka : stavkeDokumenta) {
-                    stavka.setIdDokumenta(dokumentId.getId());
-                }
-
-                databaseWorker.saveStavkeDokumenta(stavkeDokumenta);
+                databaseWorker.saveNewDokument(dokument, artikliTableView.getItems());
+                databaseDataChangedListener.onDataChanged();
+                stage.close();
             } catch (SQLException e) {
                 MessageDialogUtils.showMessage(Alert.AlertType.ERROR, "Greška",
                         "Došlo je do pogreške prilikom pohrane podataka.", "Razlog greške: " + e.getMessage());

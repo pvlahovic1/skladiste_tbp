@@ -539,12 +539,16 @@ public class DatabaseWorker {
 
     }
 
-    public Dokument saveNewDokument(Dokument dokument) throws SQLException {
+    public void saveNewDokument(Dokument dokument, List<StavkaDokumenta> stavkeDokumenta) throws SQLException {
         Connection connection = openConnectionToDatabase();
+        connection.setAutoCommit(false);
+
+        List<Statement> preparedStatementList = new ArrayList<>();
 
         String insertSQL = "INSERT INTO dokument(datum_kreiranja, id_tip_dokumenta, id_zaposlenika, id_poslovnog_partnera) VALUES (?, ?, ?, ?);";
 
         PreparedStatement preparedStatement = connection.prepareStatement(insertSQL);
+        preparedStatementList.add(preparedStatement);
         preparedStatement.setTimestamp(1, Timestamp.valueOf(dokument.getDatumKreiranja()));
         preparedStatement.setInt(2, dokument.getIdTipDokument());
         preparedStatement.setInt(3, dokument.getIdZaposlenika());
@@ -552,9 +556,43 @@ public class DatabaseWorker {
 
         preparedStatement.executeUpdate();
 
-        closeConnectionToDatabase(connection, Collections.singletonList(preparedStatement));
 
-        return getDokumentByDatumKreiranjaIdTipDokumentaIdZaposlenikaIdPoslovnogPartnera(dokument.getDatumKreiranja(), dokument.getIdTipDokument(), dokument.getIdZaposlenika(), dokument.getIdPoslovnigPartnera());
+        PreparedStatement preparedStatementDokumentId = connection.prepareStatement("SELECT dokument.id FROM" +
+                " dokument WHERE datum_kreiranja = ? AND id_tip_dokumenta = ? " +
+                "AND id_zaposlenika = ? AND id_poslovnog_partnera = ?");
+        preparedStatementList.add(preparedStatementDokumentId);
+
+        preparedStatementDokumentId.setTimestamp(1, Timestamp.valueOf(dokument.getDatumKreiranja()));
+        preparedStatementDokumentId.setInt(2, dokument.getIdTipDokument());
+        preparedStatementDokumentId.setInt(3, dokument.getIdZaposlenika());
+        preparedStatementDokumentId.setInt(4, dokument.getIdPoslovnigPartnera());
+
+
+        ResultSet rs = preparedStatementDokumentId.executeQuery();
+
+        int idDokumenta = 0;
+
+        while ( rs.next() ) {
+            idDokumenta = rs.getInt("id");
+        }
+
+        for (StavkaDokumenta stavkaDokumenta : stavkeDokumenta) {
+            stavkaDokumenta.setIdDokumenta(idDokumenta);
+
+            insertSQL = "INSERT INTO stavke_dokumenta(id_artikla, id_dokumenta, kolicina) VALUES (?, ?, ?);";
+
+            PreparedStatement preparedStatementstavke = connection.prepareStatement(insertSQL);
+            preparedStatementList.add(preparedStatementstavke);
+            preparedStatementstavke.setInt(1, stavkaDokumenta.getIdArtikla());
+            preparedStatementstavke.setInt(2, stavkaDokumenta.getIdDokumenta());
+            preparedStatementstavke.setInt(3, stavkaDokumenta.getKolicina());
+
+            preparedStatementstavke.executeUpdate();
+        }
+
+        connection.commit();
+
+        closeConnectionToDatabase(connection, Collections.singletonList(preparedStatement));
     }
 
     private Dokument getDokumentByDatumKreiranjaIdTipDokumentaIdZaposlenikaIdPoslovnogPartnera(LocalDateTime datumKreiranja,
@@ -570,26 +608,6 @@ public class DatabaseWorker {
         }
 
         return null;
-    }
-
-    public void saveStavkeDokumenta(List<StavkaDokumenta> stavkeDokumenta) throws SQLException {
-        Connection connection = openConnectionToDatabase();
-
-        List<Statement> preparedStatementList = new ArrayList<>();
-
-        for (StavkaDokumenta stavkaDokumenta : stavkeDokumenta) {
-            String insertSQL = "INSERT INTO stavke_dokumenta(id_artikla, id_dokumenta, kolicina) VALUES (?, ?, ?);";
-
-            PreparedStatement preparedStatement = connection.prepareStatement(insertSQL);
-            preparedStatementList.add(preparedStatement);
-            preparedStatement.setInt(1, stavkaDokumenta.getIdArtikla());
-            preparedStatement.setInt(2, stavkaDokumenta.getIdDokumenta());
-            preparedStatement.setInt(3, stavkaDokumenta.getKolicina());
-
-            preparedStatement.executeUpdate();
-        }
-
-        closeConnectionToDatabase(connection, preparedStatementList);
     }
 
 }
