@@ -38,7 +38,7 @@ public class SkladisteController implements Initializable, DatabaseDataChangedLi
     public void initialize(URL location, ResourceBundle resources) {
         collNaziv.setCellValueFactory(new PropertyValueFactory<Artikl, String>("naziv"));
         collKolicinaNaSkladistu.setCellValueFactory(new PropertyValueFactory<Artikl, String>("kolicinaNaSkladistuTableCollValue"));
-        collMinimalneZalihe.setCellValueFactory(new PropertyValueFactory<Artikl, Integer>("minimalneZalihe"));
+        collMinimalneZalihe.setCellValueFactory(new PropertyValueFactory<Artikl, Integer>("minimalnaKolicinaNaSkladistuTableCollValue"));
         collJedinicnaCijena.setCellValueFactory(new PropertyValueFactory<Artikl, Double>("jedinicnaCijena"));
         collGodisnjaPotraznja.setCellValueFactory(new PropertyValueFactory<Artikl, Integer>("godisnjaPotraznja"));
         collTroskoviNabave.setCellValueFactory(new PropertyValueFactory<Artikl, Double>("troskoviNabave"));

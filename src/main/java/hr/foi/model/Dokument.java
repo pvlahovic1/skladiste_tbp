@@ -27,7 +27,8 @@ public class Dokument {
         this.idPoslovnigPartnera = poslovniPartner.getId();
     }
 
-    public Dokument(int idTipDokument, int idZaposlenika, int idPoslovnigPartnera) {
+    public Dokument(LocalDateTime datumKreiranja, int idTipDokument, int idZaposlenika, int idPoslovnigPartnera) {
+        this.datumKreiranja = datumKreiranja;
         this.idTipDokument = idTipDokument;
         this.idZaposlenika = idZaposlenika;
         this.idPoslovnigPartnera = idPoslovnigPartnera;

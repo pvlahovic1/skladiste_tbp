@@ -62,8 +62,8 @@ public class DokumentDetailController implements Initializable {
 
     private void refreshDokumentData() {
         lblDokumentNaziv.setText("Dokument: " + dokument.getTipDokumenta().getNaziv());
-        lblTipDokumeta.setText("Tip dokumenta: " + dokument.getDatumKreiranja().toLocalDate().toString());
-        lblDatumKreiranja.setText("Datum kreiranja: " + dokument.getTipDokumenta().getAkcija());
+        lblDatumKreiranja.setText("Datum kreiranja: " + dokument.getDatumKreiranja().toLocalDate().toString());
+        lblTipDokumeta.setText("Tip dokumenta: " + dokument.getTipDokumenta().getAkcija());
         lblZaposlenik.setText("Zaposlenik: " + dokument.getZaposlenik().getIme() + " " + dokument.getZaposlenik().getPrezime());
     }
 

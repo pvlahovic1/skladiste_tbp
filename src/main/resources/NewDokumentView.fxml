@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox prefHeight="838.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.foi.controller.NoviDokumentController">
+   <children>
+      <TitledPane animated="false" prefHeight="380.0" prefWidth="1024.0" text="Potrebni artikli">
+        <content>
+            <Pane prefHeight="418.0" prefWidth="1022.0">
+               <children>
+                  <TableView fx:id="potrebniArtikliTableView" layoutX="22.0" layoutY="24.0" prefHeight="220.0" prefWidth="967.0">
+                    <columns>
+                      <TableColumn fx:id="collPotrebniArtikl" prefWidth="135.0" text="Artikl" />
+                      <TableColumn fx:id="collPotrebniArtiklKolicinaNaSkladistu" prefWidth="151.0" text="Količina na skladištu" />
+                        <TableColumn fx:id="collPotrebniArtiklMinimalnaKolicina" prefWidth="149.0" text="Minimalna količina" />
+                        <TableColumn fx:id="collPotrebniArtiklCijenaNarucivanja" prefWidth="146.0" text="Cijena naručivanja" />
+                        <TableColumn fx:id="collPotrebniArtikCijenaSkladistenja" prefWidth="143.0" text="Cijena skladištenja" />
+                        <TableColumn fx:id="collPotrebniArtiklEkonomicnaKolicinaNarucivanja" prefWidth="240.0" text="Ekonomična količina naručivanja" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="22.0" layoutY="255.0" mnemonicParsing="false" onAction="#onKreirajPotrebniDokumentButtonClicked" text="Kreiraj Dokument" />
+               </children>
+            </Pane>
+        </content>
+      </TitledPane>
+      <TitledPane animated="false" layoutY="399.0" prefHeight="440.0" prefWidth="1024.0" text="Mogući artikli">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="moguciArtikliTableView" layoutX="22.0" layoutY="29.0" prefHeight="267.0" prefWidth="971.0">
+                     <columns>
+                        <TableColumn fx:id="collMoguciArtikli" prefWidth="156.0" text="Artikl" />
+                        <TableColumn fx:id="collMoguciArtikliKolicinaNaSkladistu" prefWidth="176.0" text="Količina na skladištu" />
+                        <TableColumn fx:id="collMoguciArtikliMinimalnaKolicina" prefWidth="201.0" text="Minimalna količina" />
+                        <TableColumn fx:id="collMoguciArtikliCijenaNaruciavanja" prefWidth="205.0" text="Cijena naručivanja" />
+                        <TableColumn fx:id="collMoguciArtikliCijenaSkladistenja" prefWidth="229.0" text="Cijena skladištenja" />
+                     </columns>
+                  </TableView>
+                  <Button layoutX="22.0" layoutY="311.0" mnemonicParsing="false" onAction="#onKreirajMoguciDokumentButtonClicked" text="Kreiraj Dokument" />
+               </children>
+            </Pane>
+         </content>
+      </TitledPane>
+   </children>
+</VBox>

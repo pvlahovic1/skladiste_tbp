@@ -3,9 +3,11 @@ package hr.foi.database;
 import hr.foi.model.*;
 
 import java.sql.*;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class DatabaseWorker {
 
@@ -329,7 +331,8 @@ public class DatabaseWorker {
     public List<Artikl> getAllArtikl() throws SQLException {
         List<Artikl> artikli = new ArrayList<>();
 
-        String selectSQL = "SELECT artikl.*, mjera.naziv as mjera FROM artikl JOIN mjera ON artikl.id_mjere = mjera.id;";
+        String selectSQL = "SELECT artikl.*, mjera.naziv as mjeraNaziv," +
+                " mjera.skracenica AS mjeraSkracenica FROM artikl JOIN mjera ON artikl.id_mjere = mjera.id;";
 
         Connection connection = openConnectionToDatabase();
         Statement statement = connection.createStatement();
@@ -346,11 +349,12 @@ public class DatabaseWorker {
             double troskoviSkladistenja = rs.getDouble("troskovi_skladistenja");
             double troskoviNabave = rs.getDouble("troskovi_nabave");
             int idMjere = rs.getInt("id_mjere");
-            String mjera = rs.getString("mjera");
+            String mjeraNaziv = rs.getString("mjeraNaziv");
+            String mjeraSkracenica = rs.getString("mjeraSkracenica");
 
-            String kolicinaMjera = String.valueOf(kolicinaNaSkladistu) + " (" + mjera + ")";
+            Mjera mjera = new Mjera(idMjere, mjeraNaziv, mjeraSkracenica);
 
-            artikli.add(new Artikl(id, naziv, kolicinaNaSkladistu, minimalneZalihe, jedinicnaCijena, godisnjaPotraznja, troskoviSkladistenja, troskoviNabave, idMjere, kolicinaMjera));
+            artikli.add(new Artikl(id, naziv, kolicinaNaSkladistu, minimalneZalihe, jedinicnaCijena, godisnjaPotraznja, troskoviSkladistenja, troskoviNabave, idMjere, mjera));
         }
 
         closeConnectionToDatabase(connection, Collections.singletonList(statement));
@@ -533,6 +537,59 @@ public class DatabaseWorker {
 
         return stavkeDokumenta;
 
+    }
+
+    public Dokument saveNewDokument(Dokument dokument) throws SQLException {
+        Connection connection = openConnectionToDatabase();
+
+        String insertSQL = "INSERT INTO dokument(datum_kreiranja, id_tip_dokumenta, id_zaposlenika, id_poslovnog_partnera) VALUES (?, ?, ?, ?);";
+
+        PreparedStatement preparedStatement = connection.prepareStatement(insertSQL);
+        preparedStatement.setTimestamp(1, Timestamp.valueOf(dokument.getDatumKreiranja()));
+        preparedStatement.setInt(2, dokument.getIdTipDokument());
+        preparedStatement.setInt(3, dokument.getIdZaposlenika());
+        preparedStatement.setInt(4, dokument.getIdPoslovnigPartnera());
+
+        preparedStatement.executeUpdate();
+
+        closeConnectionToDatabase(connection, Collections.singletonList(preparedStatement));
+
+        return getDokumentByDatumKreiranjaIdTipDokumentaIdZaposlenikaIdPoslovnogPartnera(dokument.getDatumKreiranja(), dokument.getIdTipDokument(), dokument.getIdZaposlenika(), dokument.getIdPoslovnigPartnera());
+    }
+
+    private Dokument getDokumentByDatumKreiranjaIdTipDokumentaIdZaposlenikaIdPoslovnogPartnera(LocalDateTime datumKreiranja,
+                                            int idTipDokument, int idZaposlenika, int idPoslovnigPartnera) throws SQLException {
+
+        List<Dokument> dokumenti = getAllDokument().stream().filter(d -> d.getDatumKreiranja().equals(datumKreiranja)
+                && d.getIdZaposlenika() == idZaposlenika
+                && d.getIdTipDokument() == idTipDokument
+                && d.getIdPoslovnigPartnera() == idPoslovnigPartnera).collect(Collectors.toList());
+
+        if (dokumenti != null && dokumenti.size() == 1) {
+            return dokumenti.get(0);
+        }
+
+        return null;
+    }
+
+    public void saveStavkeDokumenta(List<StavkaDokumenta> stavkeDokumenta) throws SQLException {
+        Connection connection = openConnectionToDatabase();
+
+        List<Statement> preparedStatementList = new ArrayList<>();
+
+        for (StavkaDokumenta stavkaDokumenta : stavkeDokumenta) {
+            String insertSQL = "INSERT INTO stavke_dokumenta(id_artikla, id_dokumenta, kolicina) VALUES (?, ?, ?);";
+
+            PreparedStatement preparedStatement = connection.prepareStatement(insertSQL);
+            preparedStatementList.add(preparedStatement);
+            preparedStatement.setInt(1, stavkaDokumenta.getIdArtikla());
+            preparedStatement.setInt(2, stavkaDokumenta.getIdDokumenta());
+            preparedStatement.setInt(3, stavkaDokumenta.getKolicina());
+
+            preparedStatement.executeUpdate();
+        }
+
+        closeConnectionToDatabase(connection, preparedStatementList);
     }
 
 }

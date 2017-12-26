@@ -41,6 +41,6 @@ public class TipDokumenta {
 
     @Override
     public String toString() {
-        return naziv + "(" + akcija + ")";
+        return naziv + " (" + akcija + ")";
     }
 }

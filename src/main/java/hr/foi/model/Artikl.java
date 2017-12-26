@@ -1,5 +1,7 @@
 package hr.foi.model;
 
+import static java.lang.Math.sqrt;
+
 public class Artikl {
 
     private int id;
@@ -11,13 +13,16 @@ public class Artikl {
     private double troskoviSkladistenja;
     private double troskoviNabave;
     private int idMjere;
+    private Mjera mjera;
+    private int ekonomicnaKolicinaNarucivanja;
 
     private String kolicinaNaSkladistuTableCollValue;
+    private String minimalnaKolicinaNaSkladistuTableCollValue;
 
     public Artikl() {
     }
 
-    public Artikl(int id, String naziv, int kolicinaNaSkladistu, int minimalneZalihe, double jedinicnaCijena, int godisnjaPotraznja, double troskoviSkladistenja, double troskoviNabave, int idMjere) {
+    public Artikl(int id, String naziv, int kolicinaNaSkladistu, int minimalneZalihe, double jedinicnaCijena, int godisnjaPotraznja, double troskoviSkladistenja, double troskoviNabave, int idMjere, Mjera mjera) {
         this.id = id;
         this.naziv = naziv;
         this.kolicinaNaSkladistu = kolicinaNaSkladistu;
@@ -27,19 +32,29 @@ public class Artikl {
         this.troskoviSkladistenja = troskoviSkladistenja;
         this.troskoviNabave = troskoviNabave;
         this.idMjere = idMjere;
+        this.mjera = mjera;
+        calculateEkonomicnaCijenaNarucivanja();
     }
 
-    public Artikl(int id, String naziv, int kolicinaNaSkladistu, int minimalneZalihe, double jedinicnaCijena, int godisnjaPotraznja, double troskoviSkladistenja, double troskoviNabave, int idMjere, String kolicinaNaSkladistuTableCollValue) {
-        this.id = id;
-        this.naziv = naziv;
-        this.kolicinaNaSkladistu = kolicinaNaSkladistu;
-        this.minimalneZalihe = minimalneZalihe;
-        this.jedinicnaCijena = jedinicnaCijena;
-        this.godisnjaPotraznja = godisnjaPotraznja;
-        this.troskoviSkladistenja = troskoviSkladistenja;
-        this.troskoviNabave = troskoviNabave;
-        this.idMjere = idMjere;
-        this.kolicinaNaSkladistuTableCollValue = kolicinaNaSkladistuTableCollValue;
+    private void calculateEkonomicnaCijenaNarucivanja() {
+        try{
+            ekonomicnaKolicinaNarucivanja = (int)sqrt((2 * troskoviNabave * godisnjaPotraznja) / troskoviSkladistenja);
+            if (ekonomicnaKolicinaNarucivanja <= minimalneZalihe) {
+                ekonomicnaKolicinaNarucivanja = minimalneZalihe - kolicinaNaSkladistu + 1;
+            }
+
+        } catch (Exception e) {
+            ekonomicnaKolicinaNarucivanja = 0;
+        }
+    }
+
+    public int getEkonomicnaKolicinaNarucivanja() {
+        calculateEkonomicnaCijenaNarucivanja();
+        return ekonomicnaKolicinaNarucivanja;
+    }
+
+    public void setEkonomicnaKolicinaNarucivanja(int ekonomicnaKolicinaNarucivanja) {
+        this.ekonomicnaKolicinaNarucivanja = ekonomicnaKolicinaNarucivanja;
     }
 
     public int getId() {
@@ -115,10 +130,33 @@ public class Artikl {
     }
 
     public String getKolicinaNaSkladistuTableCollValue() {
+        kolicinaNaSkladistuTableCollValue = String.valueOf(kolicinaNaSkladistu) + " (" + mjera.getSkracenica() + ")";
         return kolicinaNaSkladistuTableCollValue;
     }
 
     public void setKolicinaNaSkladistuTableCollValue(String kolicinaNaSkladistuTableCollValue) {
         this.kolicinaNaSkladistuTableCollValue = kolicinaNaSkladistuTableCollValue;
+    }
+
+    public Mjera getMjera() {
+        return mjera;
+    }
+
+    public void setMjera(Mjera mjera) {
+        this.mjera = mjera;
+    }
+
+    public String getMinimalnaKolicinaNaSkladistuTableCollValue() {
+        minimalnaKolicinaNaSkladistuTableCollValue = String.valueOf(minimalneZalihe) + " (" + mjera + ")";
+        return minimalnaKolicinaNaSkladistuTableCollValue;
+    }
+
+    public void setMinimalnaKolicinaNaSkladistuTableCollValue(String minimalnaKolicinaNaSkladistuTableCollValue) {
+        this.minimalnaKolicinaNaSkladistuTableCollValue = minimalnaKolicinaNaSkladistuTableCollValue;
+    }
+
+    @Override
+    public String toString() {
+        return naziv + " " + getKolicinaNaSkladistuTableCollValue();
     }
 }

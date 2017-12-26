@@ -19,7 +19,7 @@
             <MenuButton mnemonicParsing="false" text="Dokumenti">
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#onDokumentiButtonClicked" text="Prikaz dokumenata" />
-                <MenuItem mnemonicParsing="false" text="Novi dokument" />
+                <MenuItem mnemonicParsing="false" onAction="#onNoviDokumentButtonClicked" text="Novi dokument" />
                   <MenuItem mnemonicParsing="false" onAction="#onPrikazTipovaButtonClicked" text="Prikaz tipova" />
               </items>
             </MenuButton>

@@ -2,6 +2,8 @@ package hr.foi.model;
 
 public class StavkaDokumenta {
 
+    private int idArtikla;
+    private int idDokumenta;
     private String naziv;
     private int kolicina;
     private String skracenica;
@@ -12,7 +14,21 @@ public class StavkaDokumenta {
         this.naziv = naziv;
         this.kolicina = kolicina;
         this.skracenica = skracenica;
-        this.kolicinaTableCollValue = kolicina + " " + skracenica;
+    }
+
+    public StavkaDokumenta(int idArtikla, String naziv, int kolicina, String skracenica) {
+        this.idArtikla = idArtikla;
+        this.naziv = naziv;
+        this.kolicina = kolicina;
+        this.skracenica = skracenica;
+    }
+
+    public int getIdArtikla() {
+        return idArtikla;
+    }
+
+    public void setIdArtikla(int idArtikla) {
+        this.idArtikla = idArtikla;
     }
 
     public String getNaziv() {
@@ -39,7 +55,16 @@ public class StavkaDokumenta {
         this.skracenica = skracenica;
     }
 
+    public int getIdDokumenta() {
+        return idDokumenta;
+    }
+
+    public void setIdDokumenta(int idDokumenta) {
+        this.idDokumenta = idDokumenta;
+    }
+
     public String getKolicinaTableCollValue() {
+        this.kolicinaTableCollValue = kolicina + " " + skracenica;
         return kolicinaTableCollValue;
     }
 

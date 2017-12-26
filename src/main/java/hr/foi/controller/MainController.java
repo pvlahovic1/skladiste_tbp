@@ -19,6 +19,10 @@ public class MainController {
         applyView("/DokumentiView.fxml");
     }
 
+    public void onNoviDokumentButtonClicked() {
+        applyView("/NewDokumentView.fxml");
+    }
+
     public void onPrikazTipovaButtonClicked() {
         applyView("/TipoviDokumentaView.fxml");
     }
