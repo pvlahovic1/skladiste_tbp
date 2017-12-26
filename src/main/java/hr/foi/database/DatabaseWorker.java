@@ -3,7 +3,6 @@ package hr.foi.database;
 import hr.foi.model.*;
 
 import java.sql.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -442,6 +441,98 @@ public class DatabaseWorker {
         closeConnectionToDatabase(connection, Collections.singletonList(preparedStatement));
 
         return povijesti;
+    }
+
+    public List<Dokument> getAllDokument() throws SQLException {
+        List<Dokument> dokumenti = new ArrayList<>();
+
+        String selectSQL = "SELECT dokument.id AS dokumentId,  dokument.datum_kreiranja as dokumentDatumKreiranja," +
+                " zaposlenik.id AS zaposlenikId, zaposlenik.oib AS zaposlenikOIB, zaposlenik.ime AS zaposlenikIme," +
+                " zaposlenik.prezime AS zaposlenikPrezime, zaposlenik.email AS zaposlenikEmail," +
+                " zaposlenik.adresa AS zaposlenikAdresa,zaposlenik.telefon AS zaposlenikTelefon," +
+                " zaposlenik.vrijeme_unosa AS zaposlenikVrijemeUnosa, poslovni_partner.id AS poslovniPartnerId," +
+                " poslovni_partner.oib AS poslovniPartnerOib, poslovni_partner.naziv_pravne_osobe AS poslovniPartnerNazivPravneOsobe," +
+                " poslovni_partner.telefon AS poslovniPartnerTelefon, poslovni_partner.email AS poslovniPartnerEmail," +
+                " poslovni_partner.adresa AS poslovniPartnerAdresa, poslovni_partner.vrijeme_unosa AS posloniPartnerVrijemeUnosa," +
+                " tip_dokumenta.id AS tipDokumentaId, tip_dokumenta.naziv AS tipDokumentaNaziv, tip_dokumenta.akcija AS tipDokumentaAkcija" +
+                " FROM dokument JOIN zaposlenik ON dokument.id_zaposlenika = zaposlenik.id" +
+                " JOIN poslovni_partner ON dokument.id_poslovnog_partnera = poslovni_partner.id" +
+                " JOIN tip_dokumenta ON dokument.id_tip_dokumenta = tip_dokumenta.id;";
+
+        Connection connection = openConnectionToDatabase();
+        Statement statement = connection.createStatement();
+
+        ResultSet rs = statement.executeQuery(selectSQL);
+
+        while ( rs.next() ) {
+            int dokumentId = rs.getInt("dokumentId");
+            Timestamp dokumentDatumKreiranja = rs.getTimestamp("dokumentDatumKreiranja");
+            int zaposlenikId = rs.getInt("zaposlenikId");
+            String zaposlenikOIB = rs.getString("zaposlenikOIB");
+            String zaposlenikIme = rs.getString("zaposlenikIme");
+            String zaposlenikPrezime = rs.getString("zaposlenikPrezime");
+            String zaposlenikEmail = rs.getString("zaposlenikEmail");
+            String zaposlenikAdresa = rs.getString("zaposlenikAdresa");
+            String zaposlenikTelefon = rs.getString("zaposlenikTelefon");
+            Timestamp zaposlenikVrijemeUnosa = rs.getTimestamp("zaposlenikVrijemeUnosa");
+
+            int poslovniPartnerId = rs.getInt("poslovniPartnerId");
+            String poslovniPartnerOib = rs.getString("poslovniPartnerOib");
+            String poslovniPartnerNazivPravneOsobe = rs.getString("poslovniPartnerNazivPravneOsobe");
+            String poslovniPartnerTelefon = rs.getString("poslovniPartnerTelefon");
+            String poslovniPartnerEmail = rs.getString("poslovniPartnerEmail");
+            String poslovniPartnerAdresa = rs.getString("poslovniPartnerAdresa");
+            Timestamp posloniPartnerVrijemeUnosa = rs.getTimestamp("posloniPartnerVrijemeUnosa");
+
+            int tipDokumentaId = rs.getInt("tipDokumentaId");
+            String tipDokumentaNaziv = rs.getString("tipDokumentaNaziv");
+            String tipDokumentaAkcija = rs.getString("tipDokumentaAkcija");
+
+            Zaposlenik zaposlenik = new Zaposlenik(zaposlenikId, zaposlenikOIB, zaposlenikIme, zaposlenikPrezime,
+                    zaposlenikEmail, zaposlenikAdresa, zaposlenikTelefon, zaposlenikVrijemeUnosa.toLocalDateTime());
+
+            PoslovniPartner poslovniPartner = new PoslovniPartner(poslovniPartnerId, poslovniPartnerOib,
+                    poslovniPartnerNazivPravneOsobe, poslovniPartnerTelefon, poslovniPartnerEmail, poslovniPartnerAdresa,
+                    posloniPartnerVrijemeUnosa.toLocalDateTime());
+
+            TipDokumenta tipDokumenta = new TipDokumenta(tipDokumentaId, tipDokumentaNaziv, tipDokumentaAkcija);
+
+            dokumenti.add(new Dokument(dokumentId, dokumentDatumKreiranja.toLocalDateTime(), tipDokumenta, zaposlenik, poslovniPartner));
+        }
+
+        closeConnectionToDatabase(connection, Collections.singletonList(statement));
+
+        return dokumenti;
+    }
+
+    public List<StavkaDokumenta> getStavkeDokumentaByDokumentId(int dokumentId) throws SQLException {
+        List<StavkaDokumenta> stavkeDokumenta = new ArrayList<>();
+
+        String selectSQL = "SELECT artikl.naziv, stavke_dokumenta.kolicina, mjera.skracenica " +
+                "FROM artikl JOIN mjera ON artikl.id_mjere = mjera.id " +
+                "JOIN stavke_dokumenta ON artikl.id = stavke_dokumenta.id_artikla " +
+                "WHERE stavke_dokumenta.id_dokumenta = ?";
+
+        Connection connection = openConnectionToDatabase();
+
+        PreparedStatement preparedStatement = connection.prepareStatement(selectSQL);
+        preparedStatement.setInt(1, dokumentId);
+
+        ResultSet rs = preparedStatement.executeQuery();
+
+        while ( rs.next() ) {
+            String naziv = rs.getString("naziv");
+            int kolicina = rs.getInt("kolicina");
+            String skracenica = rs.getString("skracenica");
+
+            stavkeDokumenta.add(new StavkaDokumenta(naziv, kolicina, skracenica));
+
+        }
+
+        closeConnectionToDatabase(connection, Collections.singletonList(preparedStatement));
+
+        return stavkeDokumenta;
+
     }
 
 }

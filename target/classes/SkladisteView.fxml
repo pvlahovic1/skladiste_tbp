@@ -6,7 +6,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <Pane prefHeight="780.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.foi.controller.SkladisteController">
    <children>
       <TableView fx:id="artikliTableView" layoutX="11.0" layoutY="35.0" prefHeight="625.0" prefWidth="1002.0">
@@ -22,5 +21,6 @@
       <Button layoutX="21.0" layoutY="674.0" mnemonicParsing="false" onAction="#onIzmjeniButtonClicked" prefHeight="48.0" prefWidth="108.0" text="Izmjeni" />
       <Button layoutX="136.0" layoutY="674.0" mnemonicParsing="false" onAction="#onNovoButtonClicked" prefHeight="48.0" prefWidth="108.0" text="Novi" />
       <Button layoutX="252.0" layoutY="674.0" mnemonicParsing="false" onAction="#onObrisiButtonClicked" prefHeight="48.0" prefWidth="108.0" text="Obriši" />
+      <Button layoutX="847.0" layoutY="674.0" mnemonicParsing="false" onAction="#onPovijestButtonClicked" prefHeight="48.0" prefWidth="146.0" text="Pregledaj povijest" />
    </children>
 </Pane>

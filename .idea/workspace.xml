@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5321fe76-a474-4a88-a330-963fb3089ce2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/PovijestController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/model/Povijest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/ArtiklPovijestView.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/DokumentDetailController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/model/Dokument.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/model/StavkaDokumenta.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/DokumentDetailView.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/controller/SkladisteController.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/controller/SkladisteController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/controller/DokumentiController.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/controller/DokumentiController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/SkladisteView.fxml" afterPath="$PROJECT_DIR$/src/main/resources/SkladisteView.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/model/PoslovniPartner.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/model/PoslovniPartner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/model/TipDokumenta.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/model/TipDokumenta.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/model/Zaposlenik.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/model/Zaposlenik.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/DokumentiView.fxml" afterPath="$PROJECT_DIR$/src/main/resources/DokumentiView.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DokumentiView.fxml" afterPath="$PROJECT_DIR$/target/classes/DokumentiView.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/SkladisteView.fxml" afterPath="$PROJECT_DIR$/target/classes/SkladisteView.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,56 +38,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SkladisteView.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/SkladisteView.fxml">
+      <file leaf-file-name="DokumentDetailController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/DokumentDetailController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArtiklPovijestView.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/ArtiklPovijestView.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <marker date="1514233040834" expanded="true" signature="1869:1873" ph="..." />
-              </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PovijestController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/PovijestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+            <state relative-caret-position="168">
+              <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1530#1531#0" expanded="true" />
-                <element signature="e#1564#1565#0" expanded="true" />
+                <element signature="e#1540#1541#0" expanded="true" />
+                <element signature="e#1574#1575#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Povijest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/Povijest.java">
+      <file leaf-file-name="DokumentiController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/DokumentiController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+            <state relative-caret-position="606">
+              <caret line="56" column="54" lean-forward="false" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
               <folding>
-                <element signature="e#874#875#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,8 +67,8 @@
       <file leaf-file-name="SkladisteController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/SkladisteController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2050">
-              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="298">
+              <caret line="126" column="13" lean-forward="true" selection-start-line="111" selection-start-column="12" selection-end-line="126" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -100,43 +77,33 @@
       <file leaf-file-name="DatabaseWorker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="438" column="90" lean-forward="false" selection-start-line="438" selection-start-column="90" selection-end-line="438" selection-end-column="90" />
+            <state relative-caret-position="231">
+              <caret line="527" column="46" lean-forward="false" selection-start-line="527" selection-start-column="46" selection-end-line="527" selection-end-column="46" />
               <folding>
-                <marker date="1514233377020" expanded="true" signature="1552:1576" ph="SELECT * FRO... zaposlenik" />
-                <marker date="1514233377020" expanded="true" signature="2504:2539" ph="DELETE FROM " />
-                <marker date="1514233377020" expanded="true" signature="2999:3130" ph="INSERT INTO zaposlenik... " />
-                <marker date="1514233377020" expanded="true" signature="4010:4143" ph="UPDATE zapos... " />
-                <marker date="1514233377020" expanded="true" signature="5165:5195" ph="SELECT * FRO... poslovni_partner" />
-                <marker date="1514233377020" expanded="true" signature="6073:6114" ph="DELETE FROM " />
-                <marker date="1514233377020" expanded="true" signature="6594:6734" ph="INSERT INTO poslovni_partner... " />
-                <marker date="1514233377020" expanded="true" signature="7607:7748" ph="UPDATE poslo... " />
-                <marker date="1514233377020" expanded="true" signature="8584:8614" ph="DELETE FROM " />
-                <marker date="1514233377020" expanded="true" signature="9054:9104" ph="INSERT INTO mjera... " />
-                <marker date="1514233377020" expanded="true" signature="9619:9674" ph="UPDATE mjera... " />
-                <marker date="1514233377020" expanded="true" signature="10357:10376" ph="SELECT * FRO... mjera" />
-                <marker date="1514233377020" expanded="true" signature="11050:11077" ph="SELECT * FRO... tip_dokumenta" />
-                <marker date="1514233377020" expanded="true" signature="11633:11671" ph="DELETE FROM " />
-                <marker date="1514233377020" expanded="true" signature="12139:12193" ph="INSERT INTO tip_dokumenta... " />
-                <marker date="1514233377020" expanded="true" signature="12739:12798" ph="UPDATE tip_d... " />
-                <marker date="1514233377020" expanded="true" signature="13363:13453" ph="SELECT artik... artikl" />
-                <marker date="1514233377020" expanded="true" signature="14846:14877" ph="DELETE FROM " />
-                <marker date="1514233377020" expanded="true" signature="15321:15549" ph="INSERT INTO artikl... " />
-                <marker date="1514233377020" expanded="true" signature="16478:16717" ph="UPDATE artik... " />
-                <marker date="1514233377020" expanded="true" signature="17704:17816" ph="SELECT povij... povijest" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Zaposlenik.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/Zaposlenik.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-              <folding>
-                <element signature="e#1687#1688#0" expanded="true" />
-                <element signature="e#1722#1723#0" expanded="true" />
+                <marker date="1514281272523" expanded="true" signature="1524:1548" ph="SELECT * FRO... zaposlenik" />
+                <marker date="1514281272523" expanded="true" signature="2476:2511" ph="DELETE FROM " />
+                <marker date="1514281272523" expanded="true" signature="2971:3102" ph="INSERT INTO zaposlenik... " />
+                <marker date="1514281272523" expanded="true" signature="3982:4115" ph="UPDATE zapos... " />
+                <marker date="1514281272523" expanded="true" signature="5137:5167" ph="SELECT * FRO... poslovni_partner" />
+                <marker date="1514281272523" expanded="true" signature="6045:6086" ph="DELETE FROM " />
+                <marker date="1514281272523" expanded="true" signature="6566:6706" ph="INSERT INTO poslovni_partner... " />
+                <marker date="1514281272523" expanded="true" signature="7579:7720" ph="UPDATE poslo... " />
+                <marker date="1514281272523" expanded="true" signature="8556:8586" ph="DELETE FROM " />
+                <marker date="1514281272523" expanded="true" signature="9026:9076" ph="INSERT INTO mjera... " />
+                <marker date="1514281272523" expanded="true" signature="9591:9646" ph="UPDATE mjera... " />
+                <marker date="1514281272523" expanded="true" signature="10329:10348" ph="SELECT * FRO... mjera" />
+                <marker date="1514281272523" expanded="true" signature="11022:11049" ph="SELECT * FRO... tip_dokumenta" />
+                <marker date="1514281272523" expanded="true" signature="11605:11643" ph="DELETE FROM " />
+                <marker date="1514281272523" expanded="true" signature="12111:12165" ph="INSERT INTO tip_dokumenta... " />
+                <marker date="1514281272523" expanded="true" signature="12711:12770" ph="UPDATE tip_d... " />
+                <marker date="1514281272523" expanded="true" signature="13335:13425" ph="SELECT artik... artikl" />
+                <marker date="1514281272523" expanded="true" signature="14818:14849" ph="DELETE FROM " />
+                <marker date="1514281272523" expanded="true" signature="15293:15521" ph="INSERT INTO artikl... " />
+                <marker date="1514281272523" expanded="true" signature="16450:16689" ph="UPDATE artik... " />
+                <marker date="1514281272523" expanded="true" signature="17676:17788" ph="SELECT povij... povijest" />
+                <marker date="1514281272523" expanded="true" signature="18753:20085" ph="SELECT dokum... dokument" />
+                <marker date="1514281272523" expanded="true" signature="22926:22933" ph="SELECT povij... povijest" />
+                <marker date="1514281272523" expanded="true" signature="22926:23211" ph="SELECT artik... artikl" />
               </folding>
             </state>
           </provider>
@@ -183,13 +150,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/DokumentiView.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/Model.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/Zaposlenik.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/utils/MessageDialogUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/core/DatabaseDataChanged.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/core/DatabaseDataChangedListener.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ZaposlenikEditView.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ZaposlenikEditController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/PoslovniPartner.java" />
         <option value="$PROJECT_DIR$/src/main/resources/PoslovniPartnerEditView.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/PoslovniPartneriController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/MjereView.fxml" />
@@ -198,7 +163,6 @@
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/MjereController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/TipoviDokumentaView.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/TipDokumenta.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/TipDokumentaController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/Artikl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ArtiklEditView.fxml" />
@@ -209,9 +173,18 @@
         <option value="$PROJECT_DIR$/src/main/resources/SkladisteView.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/ArtiklPovijestView.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/SkladisteController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/Povijest.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/PovijestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/Dokument.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/tableview/DokumentTableView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/TipDokumenta.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/PoslovniPartner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/Zaposlenik.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/DokumentDetailView.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/StavkaDokumenta.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/DokumentiController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/DokumentDetailController.java" />
       </list>
     </option>
   </component>
@@ -301,6 +274,15 @@
               <item name="foi" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="edit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skladiste_tbp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skladiste_tbp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="foi" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="skladiste_tbp" type="b2602c69:ProjectViewProjectNode" />
@@ -480,7 +462,7 @@
       <workItem from="1514128024139" duration="6236000" />
       <workItem from="1514136862789" duration="8641000" />
       <workItem from="1514226665396" duration="217000" />
-      <workItem from="1514231048030" duration="3501000" />
+      <workItem from="1514231048030" duration="12021000" />
     </task>
     <task id="LOCAL-00001" summary="Dodan prikaz artikala. Dodano dodavanje novog artikla.">
       <created>1514144058587</created>
@@ -496,11 +478,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514146670920</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Dodan prikaz povijesti artikla.">
+      <created>1514234574785</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1514234574785</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43267000" />
+    <option name="totallyTimeSpent" value="51787000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -573,7 +562,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dodan prikaz artikala. Dodano dodavanje novog artikla." />
     <MESSAGE value="Dodana izmjena podataka o artiklima." />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodana izmjena podataka o artiklima." />
+    <MESSAGE value="Dodan prikaz povijesti artikla." />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodan prikaz povijesti artikla." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -582,47 +572,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-          <folding>
-            <element signature="e#514#515#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/TipDokumenta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <element signature="e#334#335#0" expanded="false" />
-            <element signature="e#359#360#0" expanded="false" />
-            <element signature="e#392#393#0" expanded="false" />
-            <element signature="e#420#421#0" expanded="false" />
-            <element signature="e#452#453#0" expanded="false" />
-            <element signature="e#480#481#0" expanded="false" />
-            <element signature="e#522#523#0" expanded="false" />
-            <element signature="e#556#557#0" expanded="false" />
-            <element signature="e#589#590#0" expanded="false" />
-            <element signature="e#618#619#0" expanded="false" />
-            <element signature="e#662#663#0" expanded="false" />
-            <element signature="e#698#699#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/PoslovniPartnerEditController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1680">
-          <caret line="98" column="23" lean-forward="true" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6678">
@@ -695,24 +644,6 @@
         <state relative-caret-position="-563">
           <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/DokumentiView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/DokumentiController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -859,27 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/TipDokumenta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="25" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <element signature="e#334#335#0" expanded="false" />
-            <element signature="e#359#360#0" expanded="false" />
-            <element signature="e#392#393#0" expanded="false" />
-            <element signature="e#420#421#0" expanded="false" />
-            <element signature="e#452#453#0" expanded="false" />
-            <element signature="e#480#481#0" expanded="false" />
-            <element signature="e#522#523#0" expanded="false" />
-            <element signature="e#556#557#0" expanded="false" />
-            <element signature="e#589#590#0" expanded="false" />
-            <element signature="e#618#619#0" expanded="false" />
-            <element signature="e#662#663#0" expanded="false" />
-            <element signature="e#698#699#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -893,16 +803,6 @@
         <state relative-caret-position="243">
           <caret line="110" column="49" lean-forward="false" selection-start-line="110" selection-start-column="49" selection-end-line="110" selection-end-column="49" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/PoslovniPartner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding>
-            <element signature="e#768#769#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -924,14 +824,6 @@
             <element signature="e#400#401#0" expanded="false" />
             <element signature="e#455#456#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/Artikl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -960,35 +852,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ArtiklEditView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/SkladisteView.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ArtiklPovijestView.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <marker date="1514233040834" expanded="true" signature="1869:1873" ph="..." />
-          </folding>
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -1003,26 +871,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ZaposlenikEditController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="71" column="42" lean-forward="true" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="1773" column="0" lean-forward="false" selection-start-line="1773" selection-start-column="0" selection-end-line="1773" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/SkladisteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2050">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1038,55 +890,185 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/tableview/DokumentTableView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="438" column="90" lean-forward="false" selection-start-line="438" selection-start-column="90" selection-end-line="438" selection-end-column="90" />
-          <folding>
-            <marker date="1514233377020" expanded="true" signature="1552:1576" ph="SELECT * FRO... zaposlenik" />
-            <marker date="1514233377020" expanded="true" signature="2504:2539" ph="DELETE FROM " />
-            <marker date="1514233377020" expanded="true" signature="2999:3130" ph="INSERT INTO zaposlenik... " />
-            <marker date="1514233377020" expanded="true" signature="4010:4143" ph="UPDATE zapos... " />
-            <marker date="1514233377020" expanded="true" signature="5165:5195" ph="SELECT * FRO... poslovni_partner" />
-            <marker date="1514233377020" expanded="true" signature="6073:6114" ph="DELETE FROM " />
-            <marker date="1514233377020" expanded="true" signature="6594:6734" ph="INSERT INTO poslovni_partner... " />
-            <marker date="1514233377020" expanded="true" signature="7607:7748" ph="UPDATE poslo... " />
-            <marker date="1514233377020" expanded="true" signature="8584:8614" ph="DELETE FROM " />
-            <marker date="1514233377020" expanded="true" signature="9054:9104" ph="INSERT INTO mjera... " />
-            <marker date="1514233377020" expanded="true" signature="9619:9674" ph="UPDATE mjera... " />
-            <marker date="1514233377020" expanded="true" signature="10357:10376" ph="SELECT * FRO... mjera" />
-            <marker date="1514233377020" expanded="true" signature="11050:11077" ph="SELECT * FRO... tip_dokumenta" />
-            <marker date="1514233377020" expanded="true" signature="11633:11671" ph="DELETE FROM " />
-            <marker date="1514233377020" expanded="true" signature="12139:12193" ph="INSERT INTO tip_dokumenta... " />
-            <marker date="1514233377020" expanded="true" signature="12739:12798" ph="UPDATE tip_d... " />
-            <marker date="1514233377020" expanded="true" signature="13363:13453" ph="SELECT artik... artikl" />
-            <marker date="1514233377020" expanded="true" signature="14846:14877" ph="DELETE FROM " />
-            <marker date="1514233377020" expanded="true" signature="15321:15549" ph="INSERT INTO artikl... " />
-            <marker date="1514233377020" expanded="true" signature="16478:16717" ph="UPDATE artik... " />
-            <marker date="1514233377020" expanded="true" signature="17704:17816" ph="SELECT povij... povijest" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="10" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/Zaposlenik.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/Artikl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding>
-            <element signature="e#1687#1688#0" expanded="true" />
-            <element signature="e#1722#1723#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="231">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/TipDokumenta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/PovijestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+        <state relative-caret-position="312">
+          <caret line="59" column="107" lean-forward="true" selection-start-line="58" selection-start-column="12" selection-end-line="59" selection-end-column="107" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1530#1531#0" expanded="true" />
-            <element signature="e#1564#1565#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ArtiklPovijestView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <marker date="1514233040834" expanded="true" signature="1869:1873" ph="..." />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ArtiklEditView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/DokumentDetailView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/Dokument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="18" column="139" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="139" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/PoslovniPartner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="17" column="143" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="143" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/Zaposlenik.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="18" column="140" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="140" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/DokumentiView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/StavkaDokumenta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="527" column="46" lean-forward="false" selection-start-line="527" selection-start-column="46" selection-end-line="527" selection-end-column="46" />
+          <folding>
+            <marker date="1514281272523" expanded="true" signature="1524:1548" ph="SELECT * FRO... zaposlenik" />
+            <marker date="1514281272523" expanded="true" signature="2476:2511" ph="DELETE FROM " />
+            <marker date="1514281272523" expanded="true" signature="2971:3102" ph="INSERT INTO zaposlenik... " />
+            <marker date="1514281272523" expanded="true" signature="3982:4115" ph="UPDATE zapos... " />
+            <marker date="1514281272523" expanded="true" signature="5137:5167" ph="SELECT * FRO... poslovni_partner" />
+            <marker date="1514281272523" expanded="true" signature="6045:6086" ph="DELETE FROM " />
+            <marker date="1514281272523" expanded="true" signature="6566:6706" ph="INSERT INTO poslovni_partner... " />
+            <marker date="1514281272523" expanded="true" signature="7579:7720" ph="UPDATE poslo... " />
+            <marker date="1514281272523" expanded="true" signature="8556:8586" ph="DELETE FROM " />
+            <marker date="1514281272523" expanded="true" signature="9026:9076" ph="INSERT INTO mjera... " />
+            <marker date="1514281272523" expanded="true" signature="9591:9646" ph="UPDATE mjera... " />
+            <marker date="1514281272523" expanded="true" signature="10329:10348" ph="SELECT * FRO... mjera" />
+            <marker date="1514281272523" expanded="true" signature="11022:11049" ph="SELECT * FRO... tip_dokumenta" />
+            <marker date="1514281272523" expanded="true" signature="11605:11643" ph="DELETE FROM " />
+            <marker date="1514281272523" expanded="true" signature="12111:12165" ph="INSERT INTO tip_dokumenta... " />
+            <marker date="1514281272523" expanded="true" signature="12711:12770" ph="UPDATE tip_d... " />
+            <marker date="1514281272523" expanded="true" signature="13335:13425" ph="SELECT artik... artikl" />
+            <marker date="1514281272523" expanded="true" signature="14818:14849" ph="DELETE FROM " />
+            <marker date="1514281272523" expanded="true" signature="15293:15521" ph="INSERT INTO artikl... " />
+            <marker date="1514281272523" expanded="true" signature="16450:16689" ph="UPDATE artik... " />
+            <marker date="1514281272523" expanded="true" signature="17676:17788" ph="SELECT povij... povijest" />
+            <marker date="1514281272523" expanded="true" signature="18753:20085" ph="SELECT dokum... dokument" />
+            <marker date="1514281272523" expanded="true" signature="22926:22933" ph="SELECT povij... povijest" />
+            <marker date="1514281272523" expanded="true" signature="22926:23211" ph="SELECT artik... artikl" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ZaposlenikEditController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/SkladisteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="126" column="13" lean-forward="true" selection-start-line="111" selection-start-column="12" selection-end-line="126" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/DokumentiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="56" column="54" lean-forward="false" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/DokumentDetailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1540#1541#0" expanded="true" />
+            <element signature="e#1574#1575#0" expanded="true" />
           </folding>
         </state>
       </provider>

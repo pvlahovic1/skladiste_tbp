@@ -38,4 +38,9 @@ public class TipDokumenta {
     public void setAkcija(String akcija) {
         this.akcija = akcija;
     }
+
+    @Override
+    public String toString() {
+        return naziv + "(" + akcija + ")";
+    }
 }

@@ -80,4 +80,9 @@ public class PoslovniPartner {
     public void setVrijemeUnosa(LocalDateTime vrijemeUnosa) {
         this.vrijemeUnosa = vrijemeUnosa;
     }
+
+    @Override
+    public String toString() {
+        return nazivPravneOsobe;
+    }
 }

@@ -90,4 +90,9 @@ public class Zaposlenik {
     public void setVrijemeUnosa(LocalDateTime vrijemeUnosa) {
         this.vrijemeUnosa = vrijemeUnosa;
     }
+
+    @Override
+    public String toString() {
+        return ime + " " + prezime;
+    }
 }
