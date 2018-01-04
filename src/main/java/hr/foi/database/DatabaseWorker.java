@@ -45,31 +45,31 @@ public class DatabaseWorker {
     }
 
     public List<Zaposlenik> getAllZaposlenik() throws SQLException {
-            List<Zaposlenik> zaposlenici = new ArrayList<>();
+        List<Zaposlenik> zaposlenici = new ArrayList<>();
 
-            Connection connection = openConnectionToDatabase();
-            Statement statement = connection.createStatement();
+        Connection connection = openConnectionToDatabase();
+        Statement statement = connection.createStatement();
 
-            ResultSet rs = statement.executeQuery("SELECT * FROM zaposlenik;");
+        ResultSet rs = statement.executeQuery("SELECT * FROM zaposlenik;");
 
-            while ( rs.next() ) {
-                int id = rs.getInt("id");
-                String oib = rs.getString("oib");
-                String ime = rs.getString("ime");
-                String prezime = rs.getString("prezime");
-                String email = rs.getString("email");
-                String adresa = rs.getString("adresa");
-                String telefon = rs.getString("telefon");
-                Timestamp vrijemeUnosa = rs.getTimestamp("vrijeme_unosa");
+        while ( rs.next() ) {
+            int id = rs.getInt("id");
+            String oib = rs.getString("oib");
+            String ime = rs.getString("ime");
+            String prezime = rs.getString("prezime");
+            String email = rs.getString("email");
+            String adresa = rs.getString("adresa");
+            String telefon = rs.getString("telefon");
+            Timestamp vrijemeUnosa = rs.getTimestamp("vrijeme_unosa");
 
-                zaposlenici.add(new Zaposlenik(id, oib, ime, prezime, email, adresa, telefon, vrijemeUnosa.toLocalDateTime()));
+            zaposlenici.add(new Zaposlenik(id, oib, ime, prezime, email, adresa, telefon, vrijemeUnosa.toLocalDateTime()));
 
-            }
-
-            closeConnectionToDatabase(connection, Collections.singletonList(statement));
-
-            return zaposlenici;
         }
+
+        closeConnectionToDatabase(connection, Collections.singletonList(statement));
+
+        return zaposlenici;
+    }
 
     public void deleteZaposlenik(Zaposlenik zaposlenik) throws SQLException {
         Connection connection = openConnectionToDatabase();
@@ -423,7 +423,7 @@ public class DatabaseWorker {
     public List<Povijest> getPovijestByArtiklId(int artiklId) throws SQLException {
         List<Povijest> povijesti = new ArrayList<>();
 
-        String selectSQL = "SELECT povijest.*, artikl.naziv FROM povijest JOIN artikl ON povijest.id_artikla = artikl.id WHERE artikl.id = ?;";
+        String selectSQL = "SELECT povijest.*, artikl.naziv FROM povijest JOIN artikl ON povijest.id_artikla = artikl.id WHERE artikl.id = ? ORDER BY vremenska_oznaka ASC;";
 
         Connection connection = openConnectionToDatabase();
 

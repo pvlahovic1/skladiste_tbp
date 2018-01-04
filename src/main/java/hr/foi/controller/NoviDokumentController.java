@@ -10,10 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.SelectionMode;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -42,6 +39,9 @@ public class NoviDokumentController implements Initializable, DatabaseDataChange
     @FXML private TableColumn<Artikl, Integer> collMoguciArtikliMinimalnaKolicina;
     @FXML private TableColumn<Artikl, Double> collMoguciArtikliCijenaNaruciavanja;
     @FXML private TableColumn<Artikl, Double> collMoguciArtikliCijenaSkladistenja;
+
+    @FXML private TitledPane moguciArtikliTitledPane;
+    @FXML private TitledPane potrebniArtikliTitledPane;
 
     private List<Artikl> artikli;
 
@@ -85,6 +85,15 @@ public class NoviDokumentController implements Initializable, DatabaseDataChange
                 .collect(Collectors.toList());
 
         potrebniArtikliTableView.setItems(FXCollections.observableList(potrebniArtikli));
+
+        if (!potrebniArtikli.isEmpty()) {
+            moguciArtikliTitledPane.setExpanded(false);
+            potrebniArtikliTitledPane.setExpanded(true);
+        } else {
+            moguciArtikliTitledPane.setExpanded(true);
+            potrebniArtikliTitledPane.setExpanded(false);
+        }
+
     }
 
     public void onKreirajPotrebniDokumentButtonClicked() {

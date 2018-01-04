@@ -6,10 +6,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <VBox prefHeight="838.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.foi.controller.NoviDokumentController">
    <children>
-      <TitledPane animated="false" prefHeight="380.0" prefWidth="1024.0" text="Potrebni artikli">
+      <TitledPane fx:id="potrebniArtikliTitledPane" animated="false" prefHeight="380.0" prefWidth="1024.0" text="Potrebni artikli">
         <content>
             <Pane prefHeight="418.0" prefWidth="1022.0">
                <children>
@@ -28,7 +27,7 @@
             </Pane>
         </content>
       </TitledPane>
-      <TitledPane animated="false" layoutY="399.0" prefHeight="440.0" prefWidth="1024.0" text="Mogući artikli">
+      <TitledPane fx:id="moguciArtikliTitledPane" animated="false" layoutY="399.0" prefHeight="440.0" prefWidth="1024.0" text="Mogući artikli">
          <content>
             <Pane prefHeight="200.0" prefWidth="200.0">
                <children>

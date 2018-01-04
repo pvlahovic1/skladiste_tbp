@@ -55,7 +55,7 @@ public class NewDokumentCreationController implements Initializable {
         try {
             List<PoslovniPartner> poslovniPartneri = databaseWorker.getAllPoslovniPartneri();
 
-            if (artikli.isEmpty()) {
+            if (poslovniPartneri.isEmpty()) {
                 MessageDialogUtils.showMessage(Alert.AlertType.INFORMATION, "Preporuka", null,
                         "Prije dodavanja novog dokumenta morate dodati poslovne partnere");
                 stage.close();
