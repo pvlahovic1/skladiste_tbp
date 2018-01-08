@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -7,9 +8,15 @@
 <?import javafx.scene.layout.*?>
 
 
-<Pane prefHeight="780.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.foi.controller.TipDokumentaController">
+<AnchorPane prefHeight="780.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.foi.controller.TipDokumentaController">
    <children>
-      <GridPane fx:id="editGridPane" layoutX="622.0" layoutY="303.0" prefHeight="150.0" prefWidth="368.0">
+      <TableView fx:id="tipDokumentaTableView" prefHeight="622.0" prefWidth="521.0" AnchorPane.bottomAnchor="100.0" AnchorPane.topAnchor="5.0">
+         <columns>
+            <TableColumn fx:id="collNaziv" prefWidth="252.0" text="Naziv" />
+            <TableColumn fx:id="collAkcija" prefWidth="267.0" text="Akcija" />
+         </columns>
+      </TableView>
+      <GridPane fx:id="editGridPane" prefHeight="150.0" prefWidth="368.0" AnchorPane.leftAnchor="606.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="250.0">
          <children>
             <Label text="Naziv" />
             <Label text="Akcija" GridPane.rowIndex="1" />
@@ -30,14 +37,20 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
       </GridPane>
-      <Button layoutX="320.0" layoutY="700.0" mnemonicParsing="false" onAction="#onNovoButtonClicked" prefHeight="36.0" prefWidth="85.0" text="Novo" />
-      <Button layoutX="222.0" layoutY="700.0" mnemonicParsing="false" onAction="#onObrisiButtonClicked" prefHeight="36.0" prefWidth="85.0" text="Obriši" />
-      <Button layoutX="122.0" layoutY="700.0" mnemonicParsing="false" onAction="#onIzmjeniButtonClicked" prefHeight="36.0" prefWidth="85.0" text="Izmjeni" />
-      <TableView fx:id="tipDokumentaTableView" layoutX="33.0" layoutY="49.0" prefHeight="622.0" prefWidth="521.0">
-         <columns>
-            <TableColumn fx:id="collNaziv" prefWidth="252.0" text="Naziv" />
-            <TableColumn fx:id="collAkcija" prefWidth="267.0" text="Akcija" />
-         </columns>
-      </TableView>
+      <HBox prefHeight="50.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onIzmjeniButtonClicked" prefHeight="50.0" prefWidth="100.0" text="Izmjeni" />
+            <Button mnemonicParsing="false" onAction="#onNovoButtonClicked" prefHeight="50.0" prefWidth="100.0" text="Novo">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onObrisiButtonClicked" prefHeight="50.0" prefWidth="100.0" text="Obriši">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
    </children>
-</Pane>
+</AnchorPane>

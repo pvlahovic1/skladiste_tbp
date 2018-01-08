@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane prefHeight="780.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.foi.controller.SkladisteController">
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.foi.controller.SkladisteController">
    <children>
-      <TableView fx:id="artikliTableView" layoutX="11.0" layoutY="35.0" prefHeight="625.0" prefWidth="1002.0">
+      <TableView fx:id="artikliTableView" prefHeight="724.0" prefWidth="1014.0" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
         <columns>
           <TableColumn fx:id="collNaziv" prefWidth="281.0" text="Naziv" />
           <TableColumn fx:id="collKolicinaNaSkladistu" prefWidth="153.0" text="Količina na skladištu" />
@@ -18,9 +19,16 @@
             <TableColumn fx:id="collTroskoviNabave" prefWidth="140.0" text="Troškovi nabave" />
         </columns>
       </TableView>
-      <Button layoutX="21.0" layoutY="674.0" mnemonicParsing="false" onAction="#onIzmjeniButtonClicked" prefHeight="48.0" prefWidth="108.0" text="Izmjeni" />
-      <Button layoutX="136.0" layoutY="674.0" mnemonicParsing="false" onAction="#onNovoButtonClicked" prefHeight="48.0" prefWidth="108.0" text="Novi" />
-      <Button layoutX="252.0" layoutY="674.0" mnemonicParsing="false" onAction="#onObrisiButtonClicked" prefHeight="48.0" prefWidth="108.0" text="Obriši" />
-      <Button layoutX="847.0" layoutY="674.0" mnemonicParsing="false" onAction="#onPovijestButtonClicked" prefHeight="48.0" prefWidth="146.0" text="Pregledaj povijest" />
+      <HBox prefHeight="50.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onIzmjeniButtonClicked" prefHeight="48.0" prefWidth="108.0" text="Izmjeni" />
+            <Button mnemonicParsing="false" onAction="#onNovoButtonClicked" prefHeight="48.0" prefWidth="108.0" text="Novi" />
+            <Button mnemonicParsing="false" onAction="#onObrisiButtonClicked" prefHeight="48.0" prefWidth="108.0" text="Obriši" />
+            <Button mnemonicParsing="false" onAction="#onPovijestButtonClicked" prefHeight="48.0" prefWidth="146.0" text="Pregledaj povijest">
+               <HBox.margin>
+                  <Insets left="500.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
    </children>
-</Pane>
+</AnchorPane>

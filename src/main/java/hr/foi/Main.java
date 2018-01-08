@@ -27,14 +27,11 @@ public class Main extends Application {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/MainView.fxml"));
             root = fxmlLoader.load();
 
-            Scene scene = new Scene(root, 1024, 768);
+            Scene scene = new Scene(root, 1024, 700);
             primaryStage.setScene(scene);
             primaryStage.setTitle("Upravljanje skladištem");
-            primaryStage.setMinWidth(1050);
-            primaryStage.setMinHeight(850);
-
-            primaryStage.setMaxWidth(1050);
-            primaryStage.setMaxHeight(850);
+            primaryStage.setMinWidth(1000);
+            primaryStage.setMinHeight(600);
 
             primaryStage.show();
         } catch (Exception e) {

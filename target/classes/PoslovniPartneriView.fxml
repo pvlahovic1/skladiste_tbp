@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -7,9 +8,9 @@
 <?import javafx.scene.layout.*?>
 
 
-<Pane prefHeight="780.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.foi.controller.PoslovniPartneriController">
+<AnchorPane prefHeight="780.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.foi.controller.PoslovniPartneriController">
    <children>
-      <TableView fx:id="poslovniPartneriTable" layoutX="22.0" layoutY="14.0" prefHeight="644.0" prefWidth="995.0">
+      <TableView fx:id="poslovniPartneriTable" prefHeight="644.0" prefWidth="995.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
          <columns>
             <TableColumn fx:id="collOib" prefWidth="118.0" text="OIB" />
             <TableColumn fx:id="collNazivPravneOsobe" prefWidth="187.0" text="Naziv pravne osobe" />
@@ -19,8 +20,20 @@
             <TableColumn fx:id="collVrijemeUnosa" prefWidth="168.0" text="Vrijeme unosa" />
          </columns>
       </TableView>
-      <Button layoutX="200.0" layoutY="700.0" mnemonicParsing="false" onAction="#obrisiButtonClicked" prefHeight="39.0" prefWidth="74.0" text="Obriši" />
-      <Button layoutX="119.0" layoutY="700.0" mnemonicParsing="false" onAction="#izmjeniButtonClicked" prefHeight="39.0" prefWidth="74.0" text="Izmjeni" />
-      <Button layoutX="39.0" layoutY="700.0" mnemonicParsing="false" onAction="#dodajButtonClicked" prefHeight="39.0" prefWidth="74.0" text="Dodaj" />
+      <HBox prefHeight="50.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#izmjeniButtonClicked" prefHeight="50.0" prefWidth="100.0" text="Izmjeni" />
+            <Button mnemonicParsing="false" onAction="#dodajButtonClicked" prefHeight="50.0" prefWidth="100.0" text="Dodaj">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#obrisiButtonClicked" prefHeight="50.0" prefWidth="100.0" text="Obriši">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
    </children>
-</Pane>
+</AnchorPane>

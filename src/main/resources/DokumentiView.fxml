@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.*?>
 
 
-<Pane prefHeight="780.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.foi.controller.DokumentiController">
+<AnchorPane prefHeight="780.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.foi.controller.DokumentiController">
    <children>
-      <TableView fx:id="dokumentTableView" layoutX="14.0" layoutY="30.0" prefHeight="642.0" prefWidth="987.0">
+      <TableView fx:id="dokumentTableView" prefHeight="642.0" prefWidth="987.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
         <columns>
           <TableColumn fx:id="collDokument" prefWidth="249.0" text="Dokument" />
           <TableColumn fx:id="collDatumKreiranja" prefWidth="290.0" text="Datum kreiranja" />
@@ -17,6 +17,10 @@
             <TableColumn fx:id="collPoslovniPartner" prefWidth="216.0" text="Poslovni partner" />
         </columns>
       </TableView>
-      <Button layoutX="14.0" layoutY="697.0" mnemonicParsing="false" onAction="#onDetaljiClicked" prefHeight="54.0" prefWidth="145.0" text="Detalji" />
+      <HBox prefHeight="50.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onDetaljiClicked" prefHeight="50.0" prefWidth="100.0" text="Detalji" />
+         </children>
+      </HBox>
    </children>
-</Pane>
+</AnchorPane>
