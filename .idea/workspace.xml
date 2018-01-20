@@ -2,20 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5321fe76-a474-4a88-a330-963fb3089ce2" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/DokumentiView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/MainView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/MjereView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/PoslovniPartnerEditView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/PoslovniPartneriView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/SkladisteView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/TipoviDokumentaView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ZaposleniciView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/ZaposlenikEditView.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/Main.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/DokumentiView.fxml" afterPath="$PROJECT_DIR$/src/main/resources/DokumentiView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/MjereView.fxml" afterPath="$PROJECT_DIR$/src/main/resources/MjereView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/NewDokumentView.fxml" afterPath="$PROJECT_DIR$/src/main/resources/NewDokumentView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/PoslovniPartneriView.fxml" afterPath="$PROJECT_DIR$/src/main/resources/PoslovniPartneriView.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/controller/MjereController.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/controller/MjereController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/controller/PoslovniPartneriController.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/controller/PoslovniPartneriController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/controller/ZaposleniciController.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/controller/ZaposleniciController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ArtiklEditController.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ArtiklEditController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java" afterPath="$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/SkladisteView.fxml" afterPath="$PROJECT_DIR$/src/main/resources/SkladisteView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/TipoviDokumentaView.fxml" afterPath="$PROJECT_DIR$/src/main/resources/TipoviDokumentaView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/ZaposleniciView.fxml" afterPath="$PROJECT_DIR$/src/main/resources/ZaposleniciView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/MjereView.fxml" afterPath="$PROJECT_DIR$/target/classes/MjereView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/PoslovniPartneriView.fxml" afterPath="$PROJECT_DIR$/target/classes/PoslovniPartneriView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/SkladisteView.fxml" afterPath="$PROJECT_DIR$/target/classes/SkladisteView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TipoviDokumentaView.fxml" afterPath="$PROJECT_DIR$/target/classes/TipoviDokumentaView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ZaposleniciView.fxml" afterPath="$PROJECT_DIR$/target/classes/ZaposleniciView.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -43,13 +50,44 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/Main.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="DatabaseWorker.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="210">
+              <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+              <folding>
+                <marker date="1515667271111" expanded="true" signature="1589:1613" ph="SELECT * FRO... zaposlenik" />
+                <marker date="1515667271111" expanded="true" signature="2485:2520" ph="DELETE FROM " />
+                <marker date="1515667271111" expanded="true" signature="2980:3111" ph="INSERT INTO zaposlenik... " />
+                <marker date="1515667271111" expanded="true" signature="3991:4124" ph="UPDATE zapos... " />
+                <marker date="1515667271111" expanded="true" signature="5146:5176" ph="SELECT * FRO... poslovni_partner" />
+                <marker date="1515667271111" expanded="true" signature="6054:6095" ph="DELETE FROM " />
+                <marker date="1515667271111" expanded="true" signature="6575:6715" ph="INSERT INTO poslovni_partner... " />
+                <marker date="1515667271111" expanded="true" signature="7588:7729" ph="UPDATE poslo... " />
+                <marker date="1515667271111" expanded="true" signature="8565:8595" ph="DELETE FROM " />
+                <marker date="1515667271111" expanded="true" signature="9035:9085" ph="INSERT INTO mjera... " />
+                <marker date="1515667271111" expanded="true" signature="9600:9655" ph="UPDATE mjera... " />
+                <marker date="1515667271111" expanded="true" signature="10338:10357" ph="SELECT * FRO... mjera" />
+                <marker date="1515667271111" expanded="true" signature="11031:11058" ph="SELECT * FRO... tip_dokumenta" />
+                <marker date="1515667271111" expanded="true" signature="11614:11652" ph="DELETE FROM " />
+                <marker date="1515667271111" expanded="true" signature="12120:12174" ph="INSERT INTO tip_dokumenta... " />
+                <marker date="1515667271111" expanded="true" signature="12720:12779" ph="UPDATE tip_d... " />
+                <marker date="1515667271111" expanded="true" signature="13344:13497" ph="SELECT artik... artikl" />
+                <marker date="1515667271111" expanded="true" signature="14944:14975" ph="DELETE FROM " />
+                <marker date="1515667271111" expanded="true" signature="15419:15647" ph="INSERT INTO artikl... " />
+                <marker date="1515667271111" expanded="true" signature="16576:16815" ph="UPDATE artik... " />
+                <marker date="1515667271111" expanded="true" signature="17802:17935" ph="SELECT povij... povijest" />
+                <marker date="1515667271111" expanded="true" signature="17802:17965" ph="SELECT povij... povijest" />
+                <marker date="1515667271111" expanded="true" signature="18930:20262" ph="SELECT dokum... dokument" />
+                <marker date="1515667271111" expanded="true" signature="23103:23110" ph="SELECT povij... povijest" />
+                <marker date="1515667271111" expanded="true" signature="23103:23388" ph="SELECT artik... artikl" />
+                <marker date="1515667271111" expanded="true" signature="24377:24491" ph="INSERT INTO dokument... " />
+                <marker date="1515667271111" expanded="true" signature="25063:25086" ph="SELECT dokum... " />
+                <marker date="1515667271111" expanded="true" signature="25063:25237" ph="SELECT dokum... dokument" />
+                <marker date="1515667271111" expanded="true" signature="25063:25241" ph="SELECT dokum... dokument" />
+                <marker date="1515667271111" expanded="true" signature="25979:26060" ph="INSERT INTO stavke_dokumenta... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,6 +112,8 @@
       <find>getDokument</find>
       <find>getAllDok</find>
       <find>Povijet</find>
+      <find>saveNewZapo</find>
+      <find>do</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -105,16 +145,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/ZaposlenikEditView.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ZaposlenikEditController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/PoslovniPartnerEditView.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/PoslovniPartneriController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/ZaposleniciController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/MjereController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/TipoviDokumentaView.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/TipDokumentaController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ArtiklEditView.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/Mjera.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/PoslovniPartnerEditController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/utils/ApplicationUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ArtiklEditController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ArtiklPovijestView.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/Povijest.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/PovijestController.java" />
@@ -132,13 +168,17 @@
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/TipDokumenta.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/Dokument.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/model/StavkaDokumenta.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/NewDokumentCreationController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/SkladisteView.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/MjereView.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/NewDokumentView.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/NoviDokumentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hr/foi/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/NoviDokumentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/PoslovniPartneriController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/ZaposleniciController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/MjereController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ArtiklEditController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java" />
       </list>
     </option>
   </component>
@@ -176,9 +216,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,6 +266,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="foi" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="edit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="skladiste_tbp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="skladiste_tbp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="foi" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -241,6 +289,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -397,7 +447,16 @@
       <workItem from="1514984306365" duration="602000" />
       <workItem from="1515080428552" duration="1890000" />
       <workItem from="1515139854708" duration="24000" />
-      <workItem from="1515418385467" duration="3367000" />
+      <workItem from="1515418385467" duration="4886000" />
+      <workItem from="1515439628258" duration="1138000" />
+      <workItem from="1515587020686" duration="1194000" />
+      <workItem from="1515594956388" duration="1747000" />
+      <workItem from="1515609013861" duration="2375000" />
+      <workItem from="1515627313479" duration="671000" />
+      <workItem from="1515667159618" duration="1862000" />
+      <workItem from="1515873188498" duration="23000" />
+      <workItem from="1516208883439" duration="777000" />
+      <workItem from="1516442808527" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="Dodan prikaz artikala. Dodano dodavanje novog artikla.">
       <created>1514144058587</created>
@@ -448,11 +507,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515083274557</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ispravljen dizajn aplikacije">
+      <created>1515421784182</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1515421784182</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85646000" />
+    <option name="totallyTimeSpent" value="96965000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -460,18 +526,17 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3223982" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3223982" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28947368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -483,6 +548,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -532,7 +598,8 @@
     <MESSAGE value="Dodano kreiranje dokumenta." />
     <MESSAGE value="Ispravljeno dodavanje novog dokumenta. Koristi se transakcija." />
     <MESSAGE value="Ispravljene greške vezane uz dodavanje novog dokumenta. Ispravljen dizaj aplikacije prilikom dodavanja novih dokumenata" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ispravljene greške vezane uz dodavanje novog dokumenta. Ispravljen dizaj aplikacije prilikom dodavanja novih dokumenata" />
+    <MESSAGE value="Ispravljen dizajn aplikacije" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ispravljen dizajn aplikacije" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -541,48 +608,24 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ZaposlenikEditView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/PoslovniPartnerEditView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-119">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/PoslovniPartneriController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/MjereController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1365">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/TipoviDokumentaView.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/TipoviDokumentaView.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/TipDokumentaController.java">
@@ -615,40 +658,33 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ArtiklPovijestView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ArtiklEditView.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ArtiklEditView.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/DokumentDetailView.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/DokumentDetailView.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/PoslovniPartner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="17" column="143" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="143" />
-        </state>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/Zaposlenik.java">
@@ -659,13 +695,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/DokumentiView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/DokumentDetailController.java">
@@ -704,35 +740,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/SkladisteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ArtiklEditController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="58" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/NewDokumentCreationView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/ZaposleniciController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="58" column="22" lean-forward="false" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
-        </state>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/control/MultipleSelectionModelBase.java">
@@ -774,13 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
           <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/utils/ApplicationUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -855,67 +863,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <marker date="1514387471512" expanded="true" signature="1576:1600" ph="SELECT * FRO... zaposlenik" />
-            <marker date="1514387471512" expanded="true" signature="2472:2507" ph="DELETE FROM " />
-            <marker date="1514387471512" expanded="true" signature="2967:3098" ph="INSERT INTO zaposlenik... " />
-            <marker date="1514387471512" expanded="true" signature="3978:4111" ph="UPDATE zapos... " />
-            <marker date="1514387471512" expanded="true" signature="5133:5163" ph="SELECT * FRO... poslovni_partner" />
-            <marker date="1514387471512" expanded="true" signature="6041:6082" ph="DELETE FROM " />
-            <marker date="1514387471512" expanded="true" signature="6562:6702" ph="INSERT INTO poslovni_partner... " />
-            <marker date="1514387471512" expanded="true" signature="7575:7716" ph="UPDATE poslo... " />
-            <marker date="1514387471512" expanded="true" signature="8552:8582" ph="DELETE FROM " />
-            <marker date="1514387471512" expanded="true" signature="9022:9072" ph="INSERT INTO mjera... " />
-            <marker date="1514387471512" expanded="true" signature="9587:9642" ph="UPDATE mjera... " />
-            <marker date="1514387471512" expanded="true" signature="10325:10344" ph="SELECT * FRO... mjera" />
-            <marker date="1514387471512" expanded="true" signature="11018:11045" ph="SELECT * FRO... tip_dokumenta" />
-            <marker date="1514387471512" expanded="true" signature="11601:11639" ph="DELETE FROM " />
-            <marker date="1514387471512" expanded="true" signature="12107:12161" ph="INSERT INTO tip_dokumenta... " />
-            <marker date="1514387471512" expanded="true" signature="12707:12766" ph="UPDATE tip_d... " />
-            <marker date="1514387471512" expanded="true" signature="13331:13484" ph="SELECT artik... artikl" />
-            <marker date="1514387471512" expanded="true" signature="14931:14962" ph="DELETE FROM " />
-            <marker date="1514387471512" expanded="true" signature="15406:15634" ph="INSERT INTO artikl... " />
-            <marker date="1514387471512" expanded="true" signature="16563:16802" ph="UPDATE artik... " />
-            <marker date="1514387471512" expanded="true" signature="17789:17901" ph="SELECT povij... povijest" />
-            <marker date="1514387471512" expanded="true" signature="17789:17931" ph="SELECT povij... povijest" />
-            <marker date="1514387471512" expanded="true" signature="18896:20228" ph="SELECT dokum... dokument" />
-            <marker date="1514387471512" expanded="true" signature="23069:23076" ph="SELECT povij... povijest" />
-            <marker date="1514387471512" expanded="true" signature="23069:23354" ph="SELECT artik... artikl" />
-            <marker date="1514387471512" expanded="true" signature="24343:24457" ph="INSERT INTO dokument... " />
-            <marker date="1514387471512" expanded="true" signature="25029:25052" ph="SELECT dokum... " />
-            <marker date="1514387471512" expanded="true" signature="25029:25203" ph="SELECT dokum... dokument" />
-            <marker date="1514387471512" expanded="true" signature="25029:25207" ph="SELECT dokum... dokument" />
-            <marker date="1514387471512" expanded="true" signature="25945:26026" ph="INSERT INTO stavke_dokumenta... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/NewDokumentCreationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
           <caret line="65" column="34" lean-forward="true" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/MjereView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
@@ -926,44 +884,148 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/SkladisteView.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/NoviDokumentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/NewDokumentView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/SkladisteView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/model/PoslovniPartner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="28" column="20" lean-forward="false" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/NoviDokumentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="78" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/ZaposleniciController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="120" column="32" lean-forward="false" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/PoslovniPartneriController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="57" column="32" lean-forward="false" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/MjereController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1567">
+          <caret line="118" column="8" lean-forward="false" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/utils/ApplicationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/edit/ArtiklEditController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/controller/SkladisteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hr/foi/database/DatabaseWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding>
+            <marker date="1515667271111" expanded="true" signature="1589:1613" ph="SELECT * FRO... zaposlenik" />
+            <marker date="1515667271111" expanded="true" signature="2485:2520" ph="DELETE FROM " />
+            <marker date="1515667271111" expanded="true" signature="2980:3111" ph="INSERT INTO zaposlenik... " />
+            <marker date="1515667271111" expanded="true" signature="3991:4124" ph="UPDATE zapos... " />
+            <marker date="1515667271111" expanded="true" signature="5146:5176" ph="SELECT * FRO... poslovni_partner" />
+            <marker date="1515667271111" expanded="true" signature="6054:6095" ph="DELETE FROM " />
+            <marker date="1515667271111" expanded="true" signature="6575:6715" ph="INSERT INTO poslovni_partner... " />
+            <marker date="1515667271111" expanded="true" signature="7588:7729" ph="UPDATE poslo... " />
+            <marker date="1515667271111" expanded="true" signature="8565:8595" ph="DELETE FROM " />
+            <marker date="1515667271111" expanded="true" signature="9035:9085" ph="INSERT INTO mjera... " />
+            <marker date="1515667271111" expanded="true" signature="9600:9655" ph="UPDATE mjera... " />
+            <marker date="1515667271111" expanded="true" signature="10338:10357" ph="SELECT * FRO... mjera" />
+            <marker date="1515667271111" expanded="true" signature="11031:11058" ph="SELECT * FRO... tip_dokumenta" />
+            <marker date="1515667271111" expanded="true" signature="11614:11652" ph="DELETE FROM " />
+            <marker date="1515667271111" expanded="true" signature="12120:12174" ph="INSERT INTO tip_dokumenta... " />
+            <marker date="1515667271111" expanded="true" signature="12720:12779" ph="UPDATE tip_d... " />
+            <marker date="1515667271111" expanded="true" signature="13344:13497" ph="SELECT artik... artikl" />
+            <marker date="1515667271111" expanded="true" signature="14944:14975" ph="DELETE FROM " />
+            <marker date="1515667271111" expanded="true" signature="15419:15647" ph="INSERT INTO artikl... " />
+            <marker date="1515667271111" expanded="true" signature="16576:16815" ph="UPDATE artik... " />
+            <marker date="1515667271111" expanded="true" signature="17802:17935" ph="SELECT povij... povijest" />
+            <marker date="1515667271111" expanded="true" signature="17802:17965" ph="SELECT povij... povijest" />
+            <marker date="1515667271111" expanded="true" signature="18930:20262" ph="SELECT dokum... dokument" />
+            <marker date="1515667271111" expanded="true" signature="23103:23110" ph="SELECT povij... povijest" />
+            <marker date="1515667271111" expanded="true" signature="23103:23388" ph="SELECT artik... artikl" />
+            <marker date="1515667271111" expanded="true" signature="24377:24491" ph="INSERT INTO dokument... " />
+            <marker date="1515667271111" expanded="true" signature="25063:25086" ph="SELECT dokum... " />
+            <marker date="1515667271111" expanded="true" signature="25063:25237" ph="SELECT dokum... dokument" />
+            <marker date="1515667271111" expanded="true" signature="25063:25241" ph="SELECT dokum... dokument" />
+            <marker date="1515667271111" expanded="true" signature="25979:26060" ph="INSERT INTO stavke_dokumenta... " />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -62,7 +62,9 @@ public class MjereController implements Initializable {
                 editGridPane.setVisible(false);
                 refreshTable();
             } catch (SQLException e) {
-                MessageDialogUtils.showMessage(Alert.AlertType.ERROR, "Greška", "Došlo je do greške u radu s bazom podataka.", "Razlog: " + e.getMessage());
+                MessageDialogUtils.showMessage(Alert.AlertType.ERROR, "Greška",
+                        "Došlo je do pogreške prilikom pohrane podataka.", "Razlog greške: " + e.getMessage());
+                e.printStackTrace();
             }
         }
     }
@@ -88,7 +90,9 @@ public class MjereController implements Initializable {
             try {
                 databaseWorker.deleteMjera(mjera);
             } catch (SQLException e) {
-                MessageDialogUtils.showMessage(Alert.AlertType.ERROR, "Greška", "Došlo je do greške u radu s bazom podataka.", "Razlog: " + e.getMessage());
+                MessageDialogUtils.showMessage(Alert.AlertType.ERROR, "Greška",
+                        "Došlo je do pogreške prilikom pohrane podataka.", "Razlog greške: " + e.getMessage());
+                e.printStackTrace();
             }
         }
 
@@ -109,7 +113,9 @@ public class MjereController implements Initializable {
             ObservableList<Mjera> ol = FXCollections.observableArrayList(databaseWorker.getAllMjera());
             mjereTableView.setItems(ol);
         } catch (SQLException e) {
-            MessageDialogUtils.showMessage(Alert.AlertType.ERROR, "Greška", null, "Došlo je do greške u radu s bazom podataka.");
+            MessageDialogUtils.showMessage(Alert.AlertType.ERROR, "Greška",
+                    "Došlo je do pogreške prilikom pohrane podataka.", "Razlog greške: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 

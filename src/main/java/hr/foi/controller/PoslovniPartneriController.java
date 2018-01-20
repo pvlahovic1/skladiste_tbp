@@ -1,11 +1,9 @@
 package hr.foi.controller;
 
 import hr.foi.controller.edit.PoslovniPartnerEditController;
-import hr.foi.controller.edit.ZaposlenikEditController;
 import hr.foi.core.DatabaseDataChangedListener;
 import hr.foi.database.DatabaseWorker;
 import hr.foi.model.PoslovniPartner;
-import hr.foi.model.Zaposlenik;
 import hr.foi.utils.MessageDialogUtils;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -40,7 +38,7 @@ public class PoslovniPartneriController implements Initializable, DatabaseDataCh
     public void initialize(URL location, ResourceBundle resources) {
         collOib.setCellValueFactory(new PropertyValueFactory<PoslovniPartner, String>("oib"));
         collNazivPravneOsobe.setCellValueFactory(new PropertyValueFactory<PoslovniPartner, String>("nazivPravneOsobe"));
-        collEmail.setCellValueFactory(new PropertyValueFactory<PoslovniPartner, String>("emai"));
+        collEmail.setCellValueFactory(new PropertyValueFactory<PoslovniPartner, String>("email"));
         collAdresa.setCellValueFactory(new PropertyValueFactory<PoslovniPartner, String>("adresa"));
         collTelefon.setCellValueFactory(new PropertyValueFactory<PoslovniPartner, String>("telefon"));
         collVrijemeUnosa.setCellValueFactory(new PropertyValueFactory<PoslovniPartner, String>("vrijemeUnosa"));
@@ -55,7 +53,8 @@ public class PoslovniPartneriController implements Initializable, DatabaseDataCh
             ObservableList<PoslovniPartner> ol = FXCollections.observableArrayList(database.getAllPoslovniPartneri());
             poslovniPartneriTable.setItems(ol);
         } catch (SQLException e) {
-            MessageDialogUtils.showMessage(Alert.AlertType.ERROR, "Greška", null, "Došlo je do greške u radu s bazom podataka.");
+            MessageDialogUtils.showMessage(Alert.AlertType.ERROR, "Greška",
+                    "Došlo je do pogreške prilikom pohrane podataka.", "Razlog greške: " + e.getMessage());
             e.printStackTrace();
         }
     }

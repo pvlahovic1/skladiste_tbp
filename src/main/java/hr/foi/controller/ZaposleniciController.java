@@ -116,7 +116,8 @@ public class ZaposleniciController implements Initializable, DatabaseDataChanged
             ObservableList<Zaposlenik> ol = FXCollections.observableArrayList(database.getAllZaposlenik());
             zposleniciTable.setItems(ol);
         } catch (SQLException e) {
-            MessageDialogUtils.showMessage(Alert.AlertType.ERROR, "Greška", null, "Došlo je do greške u radu s bazom podataka.");
+            MessageDialogUtils.showMessage(Alert.AlertType.ERROR, "Greška",
+                    "Došlo je do pogreške prilikom pohrane podataka.", "Razlog greške: " + e.getMessage());
             e.printStackTrace();
         }
     }

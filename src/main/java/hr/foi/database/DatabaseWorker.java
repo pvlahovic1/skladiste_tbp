@@ -13,9 +13,9 @@ public class DatabaseWorker {
 
     private static String HOST = "localhost";
     private static String PORT = "5432";
-    private static String DATABASE = "tbp_skladiste";
-    private static String USERNAME = "postgres";
-    private static String PASSSWORD = "postgres";
+    private static String DATABASE = "skladiste_pavao_vlahovic";
+    private static String USERNAME = "pvlahovic";
+    private static String PASSSWORD = "pvlahovic";
     private static DatabaseWorker instance = null;
 
     private DatabaseWorker() {
@@ -423,7 +423,8 @@ public class DatabaseWorker {
     public List<Povijest> getPovijestByArtiklId(int artiklId) throws SQLException {
         List<Povijest> povijesti = new ArrayList<>();
 
-        String selectSQL = "SELECT povijest.*, artikl.naziv FROM povijest JOIN artikl ON povijest.id_artikla = artikl.id WHERE artikl.id = ? ORDER BY vremenska_oznaka ASC;";
+        String selectSQL = "SELECT povijest.*, artikl.naziv FROM povijest JOIN artikl ON povijest.id_artikla = artikl.id " +
+                "WHERE artikl.id = ? ORDER BY vremenska_oznaka ASC;";
 
         Connection connection = openConnectionToDatabase();
 

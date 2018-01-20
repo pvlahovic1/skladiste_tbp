@@ -186,7 +186,7 @@ public class ArtiklEditController implements Initializable {
         }
 
         if (jedinicnaCijenaTextArea.getText().isEmpty()
-                || !isNumberAndBiggerThen(jedinicnaCijenaTextArea.getText(), 0)) {
+                || !isNumberAndBiggerThen(jedinicnaCijenaTextArea.getText(), -1)) {
             isValid = false;
             jedinicnaCijenaTextArea.setBorder(errorBorder);
         } else {

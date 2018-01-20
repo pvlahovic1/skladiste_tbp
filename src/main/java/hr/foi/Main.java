@@ -32,6 +32,7 @@ public class Main extends Application {
             primaryStage.setTitle("Upravljanje skladištem");
             primaryStage.setMinWidth(1000);
             primaryStage.setMinHeight(600);
+            primaryStage.setMaximized(true);
 
             primaryStage.show();
         } catch (Exception e) {
